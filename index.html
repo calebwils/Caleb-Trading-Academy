@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Parcours du Trader – Initiation au Trading</title>
+  <meta name="description" content="Initiation au Trading – Présentation interactive de cours par Le Parcours du Trader. Apprenez les bases du trading, investissement vs trading, le levier financier et plus encore." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="deck" id="deck">
+
+    <!-- ── DIAPO 1 · COUVERTURE ── -->
+    <section class="slide slide--cover active" id="slide-1" data-index="1">
+      <div class="cover-bg">
+        <div class="grid-lines"></div>
+        <div class="glow glow--1"></div>
+        <div class="glow glow--2"></div>
+      </div>
+      <div class="cover-content">
+        <div class="badge animate-in" style="--d:0ms">Module 1</div>
+        <h1 class="cover-title animate-in" style="--d:120ms">Initiation au <span class="gradient-text">Trading</span></h1>
+        <p class="cover-subtitle animate-in" style="--d:240ms">Le Parcours du Trader</p>
+        <p class="cover-description animate-in" style="--d:360ms">
+          Des bases fondamentales et premiers pas sur les marchés<br>jusqu'à une expérience pratique avancée.
+        </p>
+        <div class="cover-divider animate-in" style="--d:480ms"></div>
+        <div class="cover-meta animate-in" style="--d:600ms">
+          <span>Introduction au Trading</span>
+          <span class="dot">·</span>
+          <span>6 Thèmes Clés</span>
+          <span class="dot">·</span>
+          <span>5 Questions de Quiz</span>
+        </div>
+      </div>
+      <div class="cover-chart animate-in" style="--d:300ms">
+        <svg viewBox="0 0 420 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#6ee7b7" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#6ee7b7" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path d="M0 160 L40 145 L80 155 L120 130 L160 110 L200 95 L240 70 L280 50 L320 35 L360 20 L420 10" stroke="#6ee7b7" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M0 160 L40 145 L80 155 L120 130 L160 110 L200 95 L240 70 L280 50 L320 35 L360 20 L420 10 L420 180 L0 180 Z" fill="url(#chartGrad)"/>
+          <rect x="30" y="138" width="8" height="14" rx="1" fill="#6ee7b7" opacity="0.6"/>
+          <rect x="78" y="148" width="8" height="14" rx="1" fill="#f87171" opacity="0.6"/>
+          <rect x="118" y="118" width="8" height="18" rx="1" fill="#6ee7b7" opacity="0.6"/>
+          <rect x="158" y="100" width="8" height="16" rx="1" fill="#6ee7b7" opacity="0.6"/>
+          <rect x="198" y="85" width="8" height="16" rx="1" fill="#f87171" opacity="0.6"/>
+          <rect x="238" y="60" width="8" height="18" rx="1" fill="#6ee7b7" opacity="0.6"/>
+          <rect x="278" y="40" width="8" height="18" rx="1" fill="#6ee7b7" opacity="0.6"/>
+          <rect x="318" y="25" width="8" height="16" rx="1" fill="#f87171" opacity="0.6"/>
+          <rect x="358" y="12" width="8" height="14" rx="1" fill="#6ee7b7" opacity="0.6"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 2 · TABLE DES MATIÈRES ── -->
+    <section class="slide slide--toc" id="slide-2" data-index="2">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Aperçu</span>
+          <h2>Table des <span class="gradient-text">Matières</span></h2>
+        </div>
+        <div class="toc-grid">
+          <div class="toc-item" data-slide="3">
+            <div class="toc-num">01</div>
+            <div class="toc-info">
+              <h3>Qu'est-ce que le trading ?</h3>
+              <p>Achat & vente d'actifs financiers pour réaliser un profit</p>
+            </div>
+            <div class="toc-arrow">→</div>
+          </div>
+          <div class="toc-item" data-slide="4">
+            <div class="toc-num">02</div>
+            <div class="toc-info">
+              <h3>Ce que le trading implique</h3>
+              <p>Compétences, état d'esprit et cycle d'amélioration</p>
+            </div>
+            <div class="toc-arrow">→</div>
+          </div>
+          <div class="toc-item" data-slide="5">
+            <div class="toc-num">03</div>
+            <div class="toc-info">
+              <h3>Investissement vs Trading</h3>
+              <p>Différences clés, positions longues/courtes</p>
+            </div>
+            <div class="toc-arrow">→</div>
+          </div>
+          <div class="toc-item" data-slide="7">
+            <div class="toc-num">04</div>
+            <div class="toc-info">
+              <h3>Qui peut devenir trader ?</h3>
+              <p>Qualités et état d'esprit pour réussir</p>
+            </div>
+            <div class="toc-arrow">→</div>
+          </div>
+          <div class="toc-item" data-slide="8">
+            <div class="toc-num">05</div>
+            <div class="toc-info">
+              <h3>Revenus attendus</h3>
+              <p>Attentes réalistes et la règle 90/90/90</p>
+            </div>
+            <div class="toc-arrow">→</div>
+          </div>
+          <div class="toc-item" data-slide="9">
+            <div class="toc-num">06</div>
+            <div class="toc-info">
+              <h3>Par où commencer ?</h3>
+              <p>Comptes démo et premiers pas</p>
+            </div>
+            <div class="toc-arrow">→</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 3 · QU'EST-CE QUE LE TRADING ── -->
+    <section class="slide slide--content" id="slide-3" data-index="3">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 01</span>
+          <h2>Qu'est-ce que le <span class="gradient-text">Trading ?</span></h2>
+        </div>
+        <div class="content-layout content-layout--hero">
+          <div class="content-text">
+            <div class="definition-card">
+              <div class="definition-icon">📊</div>
+              <blockquote>
+                Le trading, c'est l'<strong>achat et la vente</strong> de divers actifs financiers pour réaliser un <strong>profit</strong> basé sur les fluctuations de leurs prix.
+              </blockquote>
+            </div>
+            <ul class="key-points">
+              <li>
+                <span class="kp-icon">💹</span>
+                <span>Trader <strong>pratiquement tout actif financier</strong> ayant une valeur monétaire</span>
+              </li>
+              <li>
+                <span class="kp-icon">📈</span>
+                <span>Spéculer sur la <strong>hausse ou la baisse</strong> des prix des actifs</span>
+              </li>
+              <li>
+                <span class="kp-icon">🌐</span>
+                <span>Accéder à une <strong>multitude d'actifs financiers</strong> — forex, actions, matières premières, crypto et plus</span>
+              </li>
+            </ul>
+          </div>
+          <div class="content-visual">
+            <div class="assets-wheel">
+              <div class="asset-card asset-card--forex">
+                <span class="asset-icon">💱</span>
+                <span>Forex</span>
+              </div>
+              <div class="asset-card asset-card--stocks">
+                <span class="asset-icon">🏢</span>
+                <span>Actions</span>
+              </div>
+              <div class="asset-card asset-card--crypto">
+                <span class="asset-icon">₿</span>
+                <span>Crypto</span>
+              </div>
+              <div class="asset-card asset-card--commodities">
+                <span class="asset-icon">🥇</span>
+                <span>Matières 1ères</span>
+              </div>
+              <div class="asset-card asset-card--indices">
+                <span class="asset-icon">📉</span>
+                <span>Indices</span>
+              </div>
+              <div class="asset-center">
+                <span>Actifs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 4 · CE QUE LE TRADING IMPLIQUE ── -->
+    <section class="slide slide--content" id="slide-4" data-index="4">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 02</span>
+          <h2>Ce que le Trading <span class="gradient-text">Implique</span></h2>
+        </div>
+        <div class="cycle-container">
+          <div class="cycle-intro">
+            <p>Le trading est un <strong>cycle d'amélioration sans fin</strong> — avec un seul objectif ultime :</p>
+            <div class="goal-badge">🎯 La Cohérence</div>
+          </div>
+          <div class="cycle-wheel">
+            <div class="cycle-item ci--1">
+              <div class="ci-icon">📚</div>
+              <div class="ci-label">Développement<br>des Compétences</div>
+            </div>
+            <div class="cycle-arrow">→</div>
+            <div class="cycle-item ci--2">
+              <div class="ci-icon">🧠</div>
+              <div class="ci-label">Préparation<br>Mentale</div>
+            </div>
+            <div class="cycle-arrow">→</div>
+            <div class="cycle-item ci--3">
+              <div class="ci-icon">⚡</div>
+              <div class="ci-label">Application<br>des Connaissances</div>
+            </div>
+            <div class="cycle-arrow">→</div>
+            <div class="cycle-item ci--4">
+              <div class="ci-icon">🔍</div>
+              <div class="ci-label">Analyse<br>des Résultats</div>
+            </div>
+            <div class="cycle-arrow">→</div>
+            <div class="cycle-item ci--5">
+              <div class="ci-icon">✅</div>
+              <div class="ci-label">Corriger &amp;<br>Améliorer</div>
+            </div>
+          </div>
+          <div class="consistency-pillars">
+            <div class="pillar">
+              <span class="pillar-icon">⚖️</span>
+              <span>Attitude Cohérente</span>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon">📅</span>
+              <span>Routine Quotidienne</span>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon">🎯</span>
+              <span>Préparation</span>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon">💰</span>
+              <span>Trades Rentables</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 5 · INVESTISSEMENT VS TRADING ── -->
+    <section class="slide slide--content" id="slide-5" data-index="5">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 03</span>
+          <h2>Investissement <span class="vs-text">vs</span> <span class="gradient-text">Trading</span></h2>
+        </div>
+        <div class="comparison-table">
+          <div class="cmp-col cmp-col--investor">
+            <div class="cmp-header">
+              <span class="cmp-icon">🏦</span>
+              <span class="cmp-title">L'Investisseur</span>
+            </div>
+            <ul class="cmp-list">
+              <li>🕐 Horizon <strong>long terme</strong></li>
+              <li>📌 <strong>Possède</strong> l'actif</li>
+              <li>📈 Profit grâce à <strong>l'appréciation du prix</strong></li>
+              <li>💵 Perçoit des <strong>dividendes / coupons</strong></li>
+              <li>🗳️ Peut avoir des <strong>droits de vote</strong> (actions)</li>
+              <li>📉 Exposition à la <strong>volatilité</strong> plus faible</li>
+            </ul>
+          </div>
+          <div class="cmp-divider">
+            <div class="cmp-divider-line"></div>
+            <div class="cmp-vs">VS</div>
+            <div class="cmp-divider-line"></div>
+          </div>
+          <div class="cmp-col cmp-col--trader">
+            <div class="cmp-header">
+              <span class="cmp-icon">⚡</span>
+              <span class="cmp-title">Le Trader</span>
+            </div>
+            <ul class="cmp-list">
+              <li>⚡ Court à <strong>moyen terme</strong></li>
+              <li>📋 Ne <strong>possède PAS</strong> l'actif</li>
+              <li>🔄 Profit grâce à la <strong>spéculation</strong></li>
+              <li>📊 Trade dans les <strong>deux directions</strong> (long/court)</li>
+              <li>⚖️ Utilise le <strong>levier</strong> financier</li>
+              <li>🌊 Exploite la <strong>volatilité</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 6 · POSITIONS LONG/SHORT + LEVIER ── -->
+    <section class="slide slide--content" id="slide-6" data-index="6">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 03 · Approfondissement</span>
+          <h2>Positions &amp; <span class="gradient-text">Levier Financier</span></h2>
+        </div>
+        <div class="positions-layout">
+          <div class="position-card position-card--long">
+            <div class="pos-label">🟢 Position Longue (Long)</div>
+            <div class="pos-desc">Spéculer sur une <strong>hausse des prix</strong></div>
+            <div class="pos-flow">
+              <div class="pos-step ps-buy">ACHETER BAS</div>
+              <div class="pos-arrow">→</div>
+              <div class="pos-step ps-sell">VENDRE HAUT</div>
+              <div class="pos-arrow">→</div>
+              <div class="pos-step ps-profit">PROFIT ✓</div>
+            </div>
+          </div>
+          <div class="position-card position-card--short">
+            <div class="pos-label">🔴 Position Courte (Short)</div>
+            <div class="pos-desc">Spéculer sur une <strong>baisse des prix</strong></div>
+            <div class="pos-flow">
+              <div class="pos-step ps-sell2">VENDRE HAUT</div>
+              <div class="pos-arrow">→</div>
+              <div class="pos-step ps-buy2">RACHETER BAS</div>
+              <div class="pos-arrow">→</div>
+              <div class="pos-step ps-profit">PROFIT ✓</div>
+            </div>
+          </div>
+        </div>
+        <div class="leverage-section">
+          <div class="leverage-title">⚙️ Comment fonctionne le levier — Exemple EURUSD (1 Lot)</div>
+          <div class="leverage-cards">
+            <div class="lev-card lev-card--no">
+              <div class="lev-label">Sans Levier</div>
+              <div class="lev-amount">100 000 $</div>
+              <div class="lev-note">Capital total requis</div>
+            </div>
+            <div class="lev-arrow">⚡ 100:1</div>
+            <div class="lev-card lev-card--yes">
+              <div class="lev-label">Avec Levier 100:1</div>
+              <div class="lev-amount">1 000 $</div>
+              <div class="lev-note">Seulement 1% de marge requis</div>
+            </div>
+          </div>
+          <div class="leverage-warning">
+            ⚠️ Un profit potentiel plus élevé implique également des <strong>pertes potentielles plus élevées</strong>. Utilisez le levier avec prudence.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 7 · QUI PEUT DEVENIR TRADER ── -->
+    <section class="slide slide--content" id="slide-7" data-index="7">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 04</span>
+          <h2>Qui peut devenir <span class="gradient-text">Trader ?</span></h2>
+        </div>
+        <div class="anyone-banner">
+          <span class="anyone-icon">🌍</span>
+          <span class="anyone-text"><strong>N'importe qui.</strong> Les résultats sont déterminés uniquement par l'attitude et la capacité — non par l'origine, la nationalité, le genre ou la richesse.</span>
+        </div>
+        <div class="traits-grid">
+          <div class="trait-card">
+            <div class="trait-icon">💪</div>
+            <div class="trait-name">Persévérance</div>
+            <div class="trait-desc">Endurer des séries perdantes de 5 à 10 trades avec patience et solidité mentale</div>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon">⚖️</div>
+            <div class="trait-name">Discipline</div>
+            <div class="trait-desc">Une approche disciplinée évite les changements de stratégie constants et construit la cohérence</div>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon">🎯</div>
+            <div class="trait-name">Humilité</div>
+            <div class="trait-desc">Admettre ses erreurs, en tirer des leçons et garder ses émotions sous contrôle</div>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon">🧠</div>
+            <div class="trait-name">Force Mentale</div>
+            <div class="trait-desc">Le bien-être psychologique est l'un des facteurs les plus importants pour réussir en trading</div>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon">🔍</div>
+            <div class="trait-name">Esprit Ouvert</div>
+            <div class="trait-desc">Rester curieux et prêt à apprendre en permanence — les marchés évoluent toujours</div>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon">🔥</div>
+            <div class="trait-name">Enthousiasme</div>
+            <div class="trait-desc">Un intérêt sincère pour le trading soutient la persévérance pendant les périodes difficiles</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 8 · REVENUS ATTENDUS ── -->
+    <section class="slide slide--content" id="slide-8" data-index="8">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 05</span>
+          <h2>Revenus <span class="gradient-text">Attendus</span></h2>
+        </div>
+        <div class="earnings-layout">
+          <div class="myth-vs-reality">
+            <div class="myth-card">
+              <div class="mvr-label">❌ Le Mythe</div>
+              <p>« Gagner des milliers de dollars par jour depuis des plages exotiques en quelques minutes de travail. »</p>
+            </div>
+            <div class="reality-card">
+              <div class="mvr-label">✅ La Réalité</div>
+              <p>Le trading exige des attentes réalistes. Des attentes excessivement élevées mènent à la <strong>déception et l'échec</strong>.</p>
+            </div>
+          </div>
+          <div class="rule-card">
+            <div class="rule-header">
+              <span class="rule-badge">90 / 90 / 90</span>
+              <span class="rule-title">La Règle</span>
+            </div>
+            <div class="rule-stats">
+              <div class="rule-stat">
+                <div class="rs-number">90%</div>
+                <div class="rs-label">des traders perdent de l'argent</div>
+              </div>
+              <div class="rule-stat">
+                <div class="rs-number">90%</div>
+                <div class="rs-label">de leur capital perdu</div>
+              </div>
+              <div class="rule-stat">
+                <div class="rs-number">90</div>
+                <div class="rs-label">jours suffisent</div>
+              </div>
+            </div>
+            <div class="rule-footer">
+              La solution ? <strong>Apprendre d'abord. Trader ensuite.</strong> Vous êtes déjà sur la bonne voie.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 9 · PAR OÙ COMMENCER ── -->
+    <section class="slide slide--content" id="slide-9" data-index="9">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 06</span>
+          <h2>Par où <span class="gradient-text">Commencer ?</span></h2>
+        </div>
+        <div class="roadmap">
+          <div class="road-step rs--1">
+            <div class="rs-num">Étape 1</div>
+            <div class="rs-icon">📖</div>
+            <div class="rs-title">Étudier les Matériaux</div>
+            <div class="rs-desc">Parcourir tous les modules de cours avant d'effectuer des trades réels</div>
+          </div>
+          <div class="road-connector">→</div>
+          <div class="road-step rs--2">
+            <div class="rs-num">Étape 2</div>
+            <div class="rs-icon">🖥️</div>
+            <div class="rs-title">Compte Démo</div>
+            <div class="rs-desc">S'entraîner dans un environnement simulé avec de vraies conditions de marché — sans risquer son argent</div>
+          </div>
+          <div class="road-connector">→</div>
+          <div class="road-step rs--3">
+            <div class="rs-num">Étape 3</div>
+            <div class="rs-icon">⚙️</div>
+            <div class="rs-title">Plateforme &amp; Graphiques</div>
+            <div class="rs-desc">Se familiariser avec la lecture des graphiques, les Stop Loss et les Take Profit</div>
+          </div>
+          <div class="road-connector">→</div>
+          <div class="road-step rs--4">
+            <div class="rs-num">Étape 4</div>
+            <div class="rs-icon">🚀</div>
+            <div class="rs-title">Trading Réel</div>
+            <div class="rs-desc">Passer au réel uniquement lorsque vous êtes véritablement préparé et confiant</div>
+          </div>
+        </div>
+        <div class="start-note">
+          💡 <strong>La préparation sur un compte démo ne doit jamais être sous-estimée.</strong> Prenez le temps qu'il faut.
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 10 · INTRO QUIZ ── -->
+    <section class="slide slide--quiz-intro" id="slide-10" data-index="10">
+      <div class="slide-bg"></div>
+      <div class="quiz-intro-content">
+        <div class="quiz-intro-icon">🎓</div>
+        <h2 class="quiz-intro-title">Bienvenue dans votre<br><span class="gradient-text">Quiz d'Introduction</span></h2>
+        <p class="quiz-intro-sub">Testez vos connaissances avec 5 questions basées sur ce que vous venez d'apprendre.</p>
+        <div class="quiz-intro-meta">
+          <div class="qim">📝 5 Questions</div>
+          <div class="qim">⏱️ Prenez votre temps</div>
+          <div class="qim">🏆 Résultats instantanés</div>
+        </div>
+        <button class="btn-start-quiz" id="btnStartQuiz">Commencer le Quiz →</button>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 11 · QUIZ Q1 ── -->
+    <section class="slide slide--quiz" id="slide-11" data-index="11">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress">
+          <div class="qp-bar" style="--pct:20%"></div>
+          <span class="qp-label">Question 1 sur 5</span>
+        </div>
+        <div class="question-card" id="q1">
+          <div class="question-text">Qu'est-ce que le trading ?</div>
+          <div class="options" data-correct="B">
+            <div class="option" data-val="A" id="q1a">
+              <span class="opt-letter">A</span>
+              <span>C'est l'achat et la vente de divers actifs financiers pour réaliser une <em>perte</em> basée sur les fluctuations de prix de ces actifs.</span>
+            </div>
+            <div class="option" data-val="B" id="q1b">
+              <span class="opt-letter">B</span>
+              <span>C'est l'achat et la vente de divers actifs financiers pour réaliser un <em>profit</em> basé sur les fluctuations de prix de ces actifs.</span>
+            </div>
+            <div class="option" data-val="C" id="q1c">
+              <span class="opt-letter">C</span>
+              <span>C'est l'achat et la vente d'actifs financiers pour réaliser un profit <em>indépendamment</em> des fluctuations de prix de ces actifs.</span>
+            </div>
+            <div class="option" data-val="D" id="q1d">
+              <span class="opt-letter">D</span>
+              <span>C'est l'achat et la vente de divers actifs <em>sans tenir compte</em> du profit bazé sur leurs fluctuations de prix.</span>
+            </div>
+          </div>
+          <div class="feedback" id="fb-q1"></div>
+          <button class="btn-next hidden" data-target="12" id="q1-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 12 · QUIZ Q2 ── -->
+    <section class="slide slide--quiz" id="slide-12" data-index="12">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress">
+          <div class="qp-bar" style="--pct:40%"></div>
+          <span class="qp-label">Question 2 sur 5</span>
+        </div>
+        <div class="question-card" id="q2">
+          <div class="question-text">Comment peut-on caractériser le levier financier ?</div>
+          <div class="options" data-correct="D">
+            <div class="option" data-val="A" id="q2a">
+              <span class="opt-letter">A</span>
+              <span>Le levier financier a un impact positif sur les profits et les pertes, assurant une croissance stable du capital investi sans risques significatifs.</span>
+            </div>
+            <div class="option" data-val="B" id="q2b">
+              <span class="opt-letter">B</span>
+              <span>Le levier financier augmente les profits potentiels mais n'affecte pas les pertes, ce qui en fait un moyen sûr d'investir.</span>
+            </div>
+            <div class="option" data-val="C" id="q2c">
+              <span class="opt-letter">C</span>
+              <span>Le levier financier permet d'ouvrir de petites positions avec un grand capital propre grâce au capital emprunté, ce qui conduit à une plus grande stabilité du portefeuille et à une minimisation du risque global.</span>
+            </div>
+            <div class="option" data-val="D" id="q2d">
+              <span class="opt-letter">D</span>
+              <span>Le levier financier permet d'ouvrir de grandes positions avec un petit capital propre grâce au capital emprunté. Cela augmente les profits potentiels mais aussi les pertes potentielles.</span>
+            </div>
+          </div>
+          <div class="feedback" id="fb-q2"></div>
+          <button class="btn-next hidden" data-target="13" id="q2-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 13 · QUIZ Q3 ── -->
+    <section class="slide slide--quiz" id="slide-13" data-index="13">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress">
+          <div class="qp-bar" style="--pct:60%"></div>
+          <span class="qp-label">Question 3 sur 5</span>
+        </div>
+        <div class="question-card" id="q3">
+          <div class="question-text">Que dit la règle du 90/90/90 ?</div>
+          <div class="options" data-correct="C">
+            <div class="option" data-val="A" id="q3a">
+              <span class="opt-letter">A</span>
+              <span>Cette règle dit que 90% des traders réaliseront un <em>profit</em> de 90% du capital initial en 90 jours.</span>
+            </div>
+            <div class="option" data-val="B" id="q3b">
+              <span class="opt-letter">B</span>
+              <span>Cette règle dit qu'après 90 jours de trading, vous avez 90% de chances de réaliser un profit de 90% sur le capital initial.</span>
+            </div>
+            <div class="option" data-val="C" id="q3c">
+              <span class="opt-letter">C</span>
+              <span>Cette règle dit que 90% des traders <em>perdront</em> 90% du capital initial en 90 jours.</span>
+            </div>
+            <div class="option" data-val="D" id="q3d">
+              <span class="opt-letter">D</span>
+              <span>Cette règle dit que 90 traders sur 100 perdront <em>tout</em> leur argent en 90 jours.</span>
+            </div>
+          </div>
+          <div class="feedback" id="fb-q3"></div>
+          <button class="btn-next hidden" data-target="14" id="q3-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 14 · QUIZ Q4 ── -->
+    <section class="slide slide--quiz" id="slide-14" data-index="14">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress">
+          <div class="qp-bar" style="--pct:80%"></div>
+          <span class="qp-label">Question 4 sur 5</span>
+        </div>
+        <div class="question-card" id="q4">
+          <div class="question-text">Quel est l'objectif principal des investisseurs à long terme ?</div>
+          <div class="options" data-correct="A">
+            <div class="option" data-val="A" id="q4a">
+              <span class="opt-letter">A</span>
+              <span>Achat direct d'un actif financier à un prix favorable, son appréciation à long terme et la réalisation de rendements réguliers provenant de la possession de cet actif.</span>
+            </div>
+            <div class="option" data-val="B" id="q4b">
+              <span class="opt-letter">B</span>
+              <span>Achat et vente de l'actif sous-jacent à un prix favorable, son appréciation à court terme et la réalisation d'un profit rapide.</span>
+            </div>
+            <div class="option" data-val="C" id="q4c">
+              <span class="opt-letter">C</span>
+              <span>Achat d'un actif financier à un prix favorable, le vendre à court terme et réaliser un profit maximum d'une transaction rapide.</span>
+            </div>
+            <div class="option" data-val="D" id="q4d">
+              <span class="opt-letter">D</span>
+              <span>Réaliser des rendements réguliers de la détention de l'actif, le vendre à court terme et réaliser un profit des transactions rapides.</span>
+            </div>
+          </div>
+          <div class="feedback" id="fb-q4"></div>
+          <button class="btn-next hidden" data-target="15" id="q4-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 15 · QUIZ Q5 ── -->
+    <section class="slide slide--quiz" id="slide-15" data-index="15">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress">
+          <div class="qp-bar" style="--pct:100%"></div>
+          <span class="qp-label">Question 5 sur 5</span>
+        </div>
+        <div class="question-card" id="q5">
+          <div class="question-text">Qu'est-ce qu'une position longue ?</div>
+          <div class="options" data-correct="C">
+            <div class="option" data-val="A" id="q5a">
+              <span class="opt-letter">A</span>
+              <span>Achat et vente d'un actif financier dans le but de maximiser le profit en achetant au prix le plus élevé possible.</span>
+            </div>
+            <div class="option" data-val="B" id="q5b">
+              <span class="opt-letter">B</span>
+              <span>En position longue, le trader spécule sur la <em>baisse</em> de la valeur de l'actif en le vendant au prix le plus élevé possible.</span>
+            </div>
+            <div class="option" data-val="C" id="q5c">
+              <span class="opt-letter">C</span>
+              <span>En position longue, le trader spécule sur la <em>hausse</em> de la valeur de l'actif en l'achetant au prix le plus bas.</span>
+            </div>
+            <div class="option" data-val="D" id="q5d">
+              <span class="opt-letter">D</span>
+              <span>En position longue, le trader spécule sur la <em>stabilité</em> de la valeur de l'actif en l'achetant et en le détenant indépendamment des variations de prix.</span>
+            </div>
+          </div>
+          <div class="feedback" id="fb-q5"></div>
+          <button class="btn-next hidden" data-target="16" id="q5-next">Voir les Résultats →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 16 · RÉSULTATS MODULE 1 ── -->
+    <section class="slide slide--results" id="slide-16" data-index="16">
+      <div class="slide-bg"></div>
+      <div class="results-inner">
+        <div class="results-icon" id="resultsIcon">🏆</div>
+        <h2 class="results-title" id="resultsTitle">Module 1 Terminé !</h2>
+        <div class="score-display" id="scoreDisplay">
+          <span class="score-num" id="scoreNum">0</span>
+          <span class="score-denom">/ 5</span>
+        </div>
+        <p class="score-msg" id="scoreMsg"></p>
+        <div class="module2-teaser">
+          <div class="m2t-badge">Prochain Module</div>
+          <div class="m2t-content">
+            <span class="m2t-icon">📖</span>
+            <div>
+              <div class="m2t-title">Module 2 · Passerelle vers le Trading</div>
+              <div class="m2t-sub">Dictionnaire du Trader — 22 termes clés pour maîtriser le monde des marchés</div>
+            </div>
+          </div>
+        </div>
+        <div class="results-actions">
+          <button class="btn-secondary" id="btnRetakeQuiz">↩ Refaire le Quiz</button>
+          <button class="btn-secondary" id="btnRestart">↑ Retour au Début</button>
+          <button class="btn-primary" id="btnGoModule2">Module 2 → </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         MODULE 2 — PASSERELLE VERS LE TRADING
+         Slides 17 – 43
+         ════════════════════════════════════════ -->
+
+    <!-- ── DIAPO 17 · COUVERTURE MODULE 2 ── -->
+    <section class="slide slide--cover slide--m2cover" id="slide-17" data-index="17">
+      <div class="cover-bg">
+        <div class="grid-lines"></div>
+        <div class="glow glow--1"></div>
+        <div class="glow glow--2"></div>
+      </div>
+      <div class="cover-content">
+        <div class="badge animate-in" style="--d:0ms">Module 2 · Leçon A</div>
+        <h1 class="cover-title animate-in" style="--d:120ms">Passerelle vers le <span class="gradient-text">Trading</span></h1>
+        <p class="cover-subtitle animate-in" style="--d:240ms">Le Parcours du Trader</p>
+        <p class="cover-description animate-in" style="--d:360ms">
+          Maîtrisez le vocabulaire essentiel du trading —<br>22 termes clés pour naviguer les marchés avec confiance.
+        </p>
+        <div class="cover-divider animate-in" style="--d:480ms"></div>
+        <div class="cover-meta animate-in" style="--d:600ms">
+          <span>Dictionnaire du Trader</span>
+          <span class="dot">·</span>
+          <span>22 Termes Clés</span>
+          <span class="dot">·</span>
+          <span>5 Questions de Quiz</span>
+        </div>
+      </div>
+      <div class="cover-chart animate-in" style="--d:300ms">
+        <svg viewBox="0 0 420 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="chartGrad2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#818cf8" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path d="M0 140 L40 120 L80 130 L120 90 L160 60 L200 80 L240 40 L280 60 L320 30 L360 15 L420 5" stroke="#818cf8" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M0 140 L40 120 L80 130 L120 90 L160 60 L200 80 L240 40 L280 60 L320 30 L360 15 L420 5 L420 180 L0 180 Z" fill="url(#chartGrad2)"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 18 · TABLE DES MATIÈRES M2 ── -->
+    <section class="slide slide--toc" id="slide-18" data-index="18">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Module 2 · Aperçu</span>
+          <h2>Dictionnaire du <span class="gradient-text">Trader</span></h2>
+        </div>
+        <div class="toc-grid toc-grid--m2">
+          <div class="toc-item" data-slide="19"><div class="toc-num">01</div><div class="toc-info"><h3>Forex</h3><p>Le marché mondial des devises</p></div><div class="toc-arrow">→</div></div>
+          <div class="toc-item" data-slide="20"><div class="toc-num">02</div><div class="toc-info"><h3>Paire de Devises</h3><p>Base, cotée, EUR/USD, Long/Short</p></div><div class="toc-arrow">→</div></div>
+          <div class="toc-item" data-slide="21"><div class="toc-num">03</div><div class="toc-info"><h3>Levier &amp; Marge</h3><p>Capital emprunté, dépôt de garantie</p></div><div class="toc-arrow">→</div></div>
+          <div class="toc-item" data-slide="22"><div class="toc-num">04</div><div class="toc-info"><h3>Lot · Pip · Bid · Ask · Spread</h3><p>Unités de mesure fondamentales</p></div><div class="toc-arrow">→</div></div>
+          <div class="toc-item" data-slide="23"><div class="toc-num">05</div><div class="toc-info"><h3>Long &amp; Short</h3><p>Positions d'achat et de vente</p></div><div class="toc-arrow">→</div></div>
+          <div class="toc-item" data-slide="25"><div class="toc-num">06</div><div class="toc-info"><h3>Types d'Ordres</h3><p>Market, Limit, Stop, Stop Limit</p></div><div class="toc-arrow">→</div></div>
+          <div class="toc-item" data-slide="28"><div class="toc-num">07</div><div class="toc-info"><h3>Gestion du Risque</h3><p>Stop Loss, Take Profit, Trailing Stop</p></div><div class="toc-arrow">→</div></div>
+          <div class="toc-item" data-slide="29"><div class="toc-num">08</div><div class="toc-info"><h3>Graphiques &amp; Volatilité</h3><p>Chandeliers, haute/basse volatilité</p></div><div class="toc-arrow">→</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 19 · FOREX ── -->
+    <section class="slide slide--content" id="slide-19" data-index="19">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 01</span>
+          <h2><span class="gradient-text">Forex</span></h2>
+        </div>
+        <div class="fulldef-layout">
+          <div class="fulldef-card">
+            <div class="fulldef-icon">💱</div>
+            <div class="fulldef-body">
+              <div class="fulldef-term">Foreign Exchange Market</div>
+              <p>Abréviation de <strong>FOReign EXchange</strong> — c'est le marché mondial <strong>décentralisé</strong> où toutes les devises du monde s'échangent. Il fonctionne de gré à gré (OTC), sans emplacement centralisé ni bourse officielle.</p>
+              <div class="fulldef-stats">
+                <div class="fds-item">
+                  <div class="fds-val">$7,5T</div>
+                  <div class="fds-lbl">Volume quotidien (2022)</div>
+                </div>
+                <div class="fds-item">
+                  <div class="fds-val">24/5</div>
+                  <div class="fds-lbl">Ouvert sans interruption</div>
+                </div>
+                <div class="fds-item">
+                  <div class="fds-val">#1</div>
+                  <div class="fds-lbl">Plus grand marché mondial</div>
+                </div>
+              </div>
+              <div class="fulldef-note">
+                💡 <strong>Marché OTC :</strong> Il n'existe pas de lieu physique centralisé — les transactions se font directement entre les participants via des réseaux électroniques.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 20 · PAIRE DE DEVISES + image ── -->
+    <section class="slide slide--content" id="slide-20" data-index="20">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 02</span>
+          <h2>Paire de <span class="gradient-text">Devises</span></h2>
+        </div>
+        <div class="imgbig-layout">
+          <div class="imgbig-image">
+            <img src="currency pair image.jpg" alt="Paire de devises EUR/USD" class="imgbig-img" />
+          </div>
+          <div class="imgbig-text">
+            <div class="ibt-block">
+              <div class="ibt-label">💱 Devise de Base</div>
+              <p>La <strong>première</strong> devise de la paire. Dans EUR/USD, c'est l'<strong>euro (EUR)</strong>.</p>
+            </div>
+            <div class="ibt-block">
+              <div class="ibt-label">📊 Devise Cotée</div>
+              <p>La <strong>deuxième</strong> devise, servant de référence. Dans EUR/USD, c'est le <strong>dollar (USD)</strong>. Le taux indique combien d'unités de la devise cotée sont nécessaires pour acheter 1 unité de la base.</p>
+            </div>
+            <div class="ibt-directions">
+              <div class="ibt-dir ibt-dir--bull">🟢 Long EUR/USD<span>On spécule sur la <strong>hausse</strong> de l'euro</span></div>
+              <div class="ibt-dir ibt-dir--bear">🔴 Short EUR/USD<span>On spécule sur la <strong>baisse</strong> de l'euro</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 21 · LEVIER & MARGE + image ── -->
+    <section class="slide slide--content" id="slide-21" data-index="21">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 03</span>
+          <h2>Levier &amp; <span class="gradient-text">Marge</span></h2>
+        </div>
+        <div class="imgbig-layout imgbig-layout--reverse">
+          <div class="imgbig-text">
+            <div class="ibt-block">
+              <div class="ibt-label">⚙️ Levier Financier</div>
+              <p>Utilisation du <strong>capital emprunté</strong> pour amplifier la taille des positions. Un trader avec 1 000 $ et un levier 100:1 peut contrôler une position de <strong>100 000 $</strong>.</p>
+              <div class="leverage-pill-row">
+                <div class="lev-pill lev-pill--no">Sans levier<br><strong>100 000 $</strong> requis</div>
+                <div class="lev-arrow-sm">⚡ 100:1</div>
+                <div class="lev-pill lev-pill--yes">Avec levier<br><strong>1 000 $</strong> requis</div>
+              </div>
+            </div>
+            <div class="ibt-block">
+              <div class="ibt-label">🔒 Marge</div>
+              <p><strong>Dépôt ou avance</strong> conservé par le courtier. Elle garantit que le trader dispose de fonds suffisants pour couvrir les pertes potentielles sur ses positions ouvertes.</p>
+            </div>
+            <div class="fulldef-note" style="margin-top:8px">
+              ⚠️ Plus le levier est élevé, plus les <strong>profits ET les pertes</strong> potentiels sont importants.
+            </div>
+          </div>
+          <div class="imgbig-image">
+            <img src="leverage image.png" alt="Levier financier" class="imgbig-img imgbig-img--contain" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 22 · LOT / PIP / BID / ASK / SPREAD ── -->
+    <section class="slide slide--content" id="slide-22" data-index="22">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 04</span>
+          <h2>Lot · Pip · Bid · Ask · <span class="gradient-text">Spread</span></h2>
+        </div>
+        <div class="glossary-grid">
+          <div class="glo-card">
+            <div class="glo-icon">📦</div>
+            <div class="glo-term">Lot</div>
+            <div class="glo-def">Unité standardisée de quantité d'un instrument. En forex, 1 lot standard = <strong>100 000 unités</strong> d'une devise.</div>
+          </div>
+          <div class="glo-card">
+            <div class="glo-icon">📏</div>
+            <div class="glo-term">Pip</div>
+            <div class="glo-def"><em>Price Interest Point</em> — unité fondamentale du mouvement. Représente <strong>1/10 000e</strong> du taux. EUR/USD : 1,1000 → 1,1001 = 1 pip.</div>
+          </div>
+          <div class="glo-card">
+            <div class="glo-icon">📥</div>
+            <div class="glo-term">Bid</div>
+            <div class="glo-def">Prix auquel un trader est <strong>prêt à acheter</strong> un actif. C'est le prix affiché à gauche sur votre plateforme.</div>
+          </div>
+          <div class="glo-card">
+            <div class="glo-icon">📤</div>
+            <div class="glo-term">Ask</div>
+            <div class="glo-def">Prix auquel un trader est <strong>prêt à vendre</strong> un actif. C'est le prix affiché à droite sur votre plateforme.</div>
+          </div>
+          <div class="glo-card glo-card--wide">
+            <div class="glo-icon">↔️</div>
+            <div class="glo-term">Spread</div>
+            <div class="glo-def">Différence entre le prix <strong>Bid</strong> et le prix <strong>Ask</strong>. C'est le coût principal de transaction en forex — plus il est faible, moins la transaction coûte cher.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 23 · LONG + image ── -->
+    <section class="slide slide--content" id="slide-23" data-index="23">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 05 · Position Longue</span>
+          <h2><span class="gradient-text">Long</span> — Spéculer à la Hausse</h2>
+        </div>
+        <div class="imgbig-layout">
+          <div class="imgbig-image imgbig-image--tall">
+            <img src="Long.png" alt="Position longue" class="imgbig-img" />
+          </div>
+          <div class="imgbig-text">
+            <div class="ibt-block">
+              <div class="ibt-label ibt-label--bull">🟢 Définition</div>
+              <p>Une position longue signifie <strong>acheter un actif</strong> avec l'anticipation que son prix va <strong>augmenter</strong>. Le trader achète au prix bas pour revendre plus haut et empocher la différence.</p>
+            </div>
+            <div class="pos-flow" style="margin-top:12px">
+              <div class="pos-step ps-buy">ACHETER BAS</div>
+              <div class="pos-arrow">→</div>
+              <div class="pos-step ps-sell">VENDRE HAUT</div>
+              <div class="pos-arrow">→</div>
+              <div class="pos-step ps-profit">PROFIT ✓</div>
+            </div>
+            <div class="ibt-block" style="margin-top:16px">
+              <div class="ibt-label">📌 Exemple pratique</div>
+              <p>Si EUR/USD est à <strong>1,1000</strong> et que vous pensez que l'euro va monter, vous ouvrez un Long. Si le prix monte à <strong>1,1100</strong>, vous gagnez 100 pips.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 24 · SHORT + image ── -->
+    <section class="slide slide--content" id="slide-24" data-index="24">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 05 · Position Courte</span>
+          <h2><span class="gradient-text">Short</span> — Spéculer à la Baisse</h2>
+        </div>
+        <div class="imgbig-layout imgbig-layout--reverse">
+          <div class="imgbig-text">
+            <div class="ibt-block">
+              <div class="ibt-label ibt-label--bear">🔴 Définition</div>
+              <p>Une position courte signifie <strong>vendre un actif</strong> avec l'anticipation que son prix va <strong>baisser</strong>. Le trader vend à un prix élevé pour racheter plus bas et encaisser la différence.</p>
+            </div>
+            <div class="pos-flow" style="margin-top:12px">
+              <div class="pos-step ps-sell2">VENDRE HAUT</div>
+              <div class="pos-arrow">→</div>
+              <div class="pos-step ps-buy2">RACHETER BAS</div>
+              <div class="pos-arrow">→</div>
+              <div class="pos-step ps-profit">PROFIT ✓</div>
+            </div>
+            <div class="ibt-block" style="margin-top:16px">
+              <div class="ibt-label">📌 Exemple pratique</div>
+              <p>Si EUR/USD est à <strong>1,1100</strong> et que vous pensez que l'euro va baisser, vous ouvrez un Short. Si le prix descend à <strong>1,1000</strong>, vous gagnez 100 pips.</p>
+            </div>
+            <div class="ibt-block" style="margin-top:12px">
+              <div class="ibt-label">💡 Buy &amp; Sell</div>
+              <p><strong>Buy</strong> = ordre d'achat pour spéculer sur la hausse. <strong>Sell</strong> = ordre de vente pour spéculer sur la baisse.</p>
+            </div>
+          </div>
+          <div class="imgbig-image imgbig-image--tall">
+            <img src="short.png" alt="Position courte" class="imgbig-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 25 · MARKET ORDER & LIMIT ORDER + image ── -->
+    <section class="slide slide--content" id="slide-25" data-index="25">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 06 · Types d'Ordres</span>
+          <h2>Market Order &amp; <span class="gradient-text">Limit Order</span></h2>
+        </div>
+        <div class="imgbig-layout">
+          <div class="imgbig-image imgbig-image--tall">
+            <img src="Limit order.png" alt="Ordre Limit" class="imgbig-img imgbig-img--contain-bg" />
+          </div>
+          <div class="imgbig-text">
+            <div class="ibt-block">
+              <div class="ibt-label" style="color:var(--accent)">⚡ Market Order</div>
+              <p>Exécute le trade au <strong>meilleur prix disponible immédiatement</strong>. Le trader accepte le prix du marché au moment exact de l'ordre — aucun délai.</p>
+            </div>
+            <div class="ibt-block">
+              <div class="ibt-label" style="color:var(--accent2)">🎯 Limit Order</div>
+              <p>Ordre placé à un prix <strong>plus favorable</strong> que le prix actuel :</p>
+              <ul class="ibt-list">
+                <li>🟢 Pour un <strong>Long</strong> : placé <em>en dessous</em> du prix actuel</li>
+                <li>🔴 Pour un <strong>Short</strong> : placé <em>au-dessus</em> du prix actuel</li>
+              </ul>
+              <div class="fulldef-note" style="margin-top:8px">⚠️ L'ordre peut ne pas s'exécuter si le prix n'atteint jamais le niveau spécifié.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 26 · STOP ORDER & STOP LIMIT ORDER + image ── -->
+    <section class="slide slide--content" id="slide-26" data-index="26">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 06 · Types d'Ordres</span>
+          <h2>Stop Order &amp; <span class="gradient-text">Stop Limit Order</span></h2>
+        </div>
+        <div class="imgbig-layout imgbig-layout--reverse">
+          <div class="imgbig-text">
+            <div class="ibt-block">
+              <div class="ibt-label" style="color:var(--gold)">🚦 Stop Order</div>
+              <p>Utilisé quand on anticipe la <strong>poursuite du mouvement actuel</strong>. Une fois déclenché, agit comme un ordre au marché (sujet au slippage).</p>
+              <ul class="ibt-list">
+                <li>🟢 Long : placé <em>au-dessus</em> du prix actuel</li>
+                <li>🔴 Short : placé <em>en dessous</em> du prix actuel</li>
+              </ul>
+            </div>
+            <div class="ibt-block">
+              <div class="ibt-label" style="color:var(--accent3)">🔐 Stop Limit Order</div>
+              <p>Combinaison Stop + Limit. Résout le problème du <strong>slippage</strong> en déclenchant un prix Limit quand le niveau Stop est atteint. C'est le "pire prix" acceptable.</p>
+              <div class="fulldef-note" style="margin-top:8px">⚠️ L'ordre peut ne pas s'exécuter si le prix ne revient pas au niveau Limit.</div>
+            </div>
+          </div>
+          <div class="imgbig-image imgbig-image--tall">
+            <img src="Stop order.png" alt="Ordre Stop" class="imgbig-img imgbig-img--contain-bg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 27 · STOP LOSS / TAKE PROFIT / TRAILING STOP ── -->
+    <section class="slide slide--content" id="slide-27" data-index="27">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 07 · Gestion du Risque</span>
+          <h2>Stop Loss · Take Profit · <span class="gradient-text">Trailing Stop</span></h2>
+        </div>
+        <div class="risk-big-layout">
+          <div class="risk-big-cards">
+            <div class="risk-big-card risk-big-card--sl">
+              <div class="rbc-icon">🛡️</div>
+              <div class="rbc-term">Stop Loss</div>
+              <p>Ferme la position quand le prix évolue <strong>contre le trader</strong>. Représente la <strong>perte maximale acceptée</strong>. Peut être ajusté pour verrouiller des profits.</p>
+              <div class="rbc-example">Long ↓ : SL placé <strong>en dessous</strong> du prix d'entrée</div>
+            </div>
+            <div class="risk-big-card risk-big-card--tp">
+              <div class="rbc-icon">🎯</div>
+              <div class="rbc-term">Take Profit</div>
+              <p>Ferme la position quand le prix atteint l'<strong>objectif de profit</strong>. Peut être ajusté en cours de trade selon l'évolution du marché.</p>
+              <div class="rbc-example">Long ↑ : TP placé <strong>au-dessus</strong> du prix d'entrée</div>
+            </div>
+            <div class="risk-big-card risk-big-card--ts">
+              <div class="rbc-icon">🔄</div>
+              <div class="rbc-term">Trailing Stop</div>
+              <p>Stop Loss <strong>dynamique</strong> qui se déplace avec chaque pip gagné. S'active une fois le profit minimal atteint (ex. 25 pips). Protège les gains accumulés sans plafonner les profits.</p>
+              <div class="rbc-example">🔄 Se déplace automatiquement avec le prix</div>
+            </div>
+          </div>
+          <div class="risk-big-diagram">
+            <div class="rbd-label">📊 Visualisation d'une position Long</div>
+            <div class="rbd-chart">
+              <div class="rbd-tp">🎯 Take Profit ↑</div>
+              <div class="rbd-trail">🔄 Trailing Stop (remonte avec le prix)</div>
+              <div class="rbd-entry">📍 Prix d'Entrée</div>
+              <div class="rbd-sl">🛡️ Stop Loss ↓</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 28 · GRAPHIQUE EN CHANDELIERS + image large ── -->
+    <section class="slide slide--content" id="slide-28" data-index="28">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 08 · Lecture des Marchés</span>
+          <h2>Graphique en <span class="gradient-text">Chandeliers</span></h2>
+        </div>
+        <div class="imgbig-layout">
+          <div class="imgbig-image imgbig-image--xxl">
+            <img src="candlestick chart.jpg" alt="Graphique en chandeliers japonais" class="imgbig-img" />
+          </div>
+          <div class="imgbig-text">
+            <div class="ibt-block">
+              <div class="ibt-label">🕯️ Définition</div>
+              <p>Les chandeliers donnent une représentation visuelle complète des fluctuations de prix. Chaque chandelier affiche <strong>4 données clés</strong> sur une période donnée.</p>
+            </div>
+            <div class="candle-legend">
+              <div class="cl-item cl-item--open">📍 Ouverture — Prix de début de période</div>
+              <div class="cl-item cl-item--close">🏁 Clôture — Prix de fin de période</div>
+              <div class="cl-item cl-item--high">⬆️ Plus Haut — Pic atteint</div>
+              <div class="cl-item cl-item--low">⬇️ Plus Bas — Creux atteint</div>
+            </div>
+            <div class="candle-colors">
+              <div class="cc-item cc-green">🟢 Bougie verte = Prix a <strong>monté</strong></div>
+              <div class="cc-item cc-red">🔴 Bougie rouge = Prix a <strong>baissé</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 29 · HAUTE VOLATILITÉ + image large ── -->
+    <section class="slide slide--content" id="slide-29" data-index="29">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 08 · Volatilité</span>
+          <h2>Volatilité — <span class="gradient-text">Haute vs Basse</span></h2>
+        </div>
+        <div class="vol-big-layout">
+          <div class="vol-big-def">
+            <div class="dict-term-card" style="border-left-color:var(--accent)">
+              <div class="dtc-header"><span class="dtc-icon">🌊</span><span class="dtc-term">Volatilité</span></div>
+              <p class="dtc-def">Degré d'instabilité du prix d'un actif. Elle reflète l'incertitude et le risque d'un investissement. <strong>Plus la volatilité est haute, plus la plage de fluctuation est large.</strong></p>
+            </div>
+          </div>
+          <div class="vol-big-images">
+            <div class="vol-big-item">
+              <div class="vol-big-label vol-label--high">📈 Marché à Haute Volatilité</div>
+              <img src="volatility.png" alt="Haute volatilité" class="vol-big-img" />
+              <div class="vol-big-desc">Mouvements de prix <strong>amples et rapides</strong> — risque plus élevé, opportunités plus grandes.</div>
+            </div>
+            <div class="vol-big-item">
+              <div class="vol-big-label vol-label--low">📉 Marché à Basse Volatilité</div>
+              <img src="low volatility.png" alt="Basse volatilité" class="vol-big-img" />
+              <div class="vol-big-desc">Mouvements de prix <strong>faibles et réguliers</strong> — risque plus faible, opportunités limitées.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 30 · BROKER & PROP TRADING ── -->
+    <section class="slide slide--content" id="slide-30" data-index="30">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Thème 09</span>
+          <h2>Broker &amp; <span class="gradient-text">Prop Trading Moderne</span></h2>
+        </div>
+        <div class="broker-layout">
+          <div class="dict-term-card">
+            <div class="dtc-header"><span class="dtc-icon">🏦</span><span class="dtc-term">Broker (Courtier)</span></div>
+            <p class="dtc-def">Société qui <strong>arrange les transactions</strong> sur les marchés financiers pour le compte des traders, en échange d'une commission (spread ou frais).</p>
+          </div>
+          <div class="dict-term-card dict-term-card--featured">
+            <div class="dtc-header"><span class="dtc-icon">🚀</span><span class="dtc-term">Prop Trading Moderne</span></div>
+            <p class="dtc-def">Les firmes de prop trading modernes cherchent à <strong>identifier et former des traders novices</strong> en leur fournissant outils, éducation et environnement — sans risque financier pour les clients.</p>
+            <div class="prop-features">
+              <div class="pf-item"><span class="pf-icon">🎓</span><span>Formation complète</span></div>
+              <div class="pf-item"><span class="pf-icon">🛡️</span><span>Sans risque client</span></div>
+              <div class="pf-item"><span class="pf-icon">🔍</span><span>Évaluation objective</span></div>
+              <div class="pf-item"><span class="pf-icon">💰</span><span>Capital fourni</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 31 · INTRO QUIZ MODULE 2 ── -->
+    <section class="slide slide--quiz-intro" id="slide-31" data-index="31">
+      <div class="slide-bg"></div>
+      <div class="quiz-intro-content">
+        <div class="quiz-intro-icon">📖</div>
+        <h2 class="quiz-intro-title">Bienvenue dans votre<br><span class="gradient-text">Dictionnaire du Trader</span></h2>
+        <p class="quiz-intro-sub">Testez vos connaissances sur les termes clés que vous venez d'apprendre — 5 questions vous attendent.</p>
+        <div class="quiz-intro-meta">
+          <div class="qim">📝 5 Questions</div>
+          <div class="qim">⏱️ Prenez votre temps</div>
+          <div class="qim">🏆 Résultats instantanés</div>
+        </div>
+        <button class="btn-start-quiz" id="btnStartQuiz2">Commencer le Quiz →</button>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 32 · QUIZ M2 Q1 ── -->
+    <section class="slide slide--quiz" id="slide-32" data-index="32">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:20%"></div><span class="qp-label">Question 1 sur 5</span></div>
+        <div class="question-card" id="m2q1">
+          <div class="question-text">Qu'est-ce qu'un ordre Market ?</div>
+          <div class="options" data-correct="C">
+            <div class="option" data-val="A" id="m2q1a"><span class="opt-letter">A</span><span>Un ordre Market signifie que le trader exécutera le trade au <em>pire</em> prix disponible au moment de l'exécution.</span></div>
+            <div class="option" data-val="B" id="m2q1b"><span class="opt-letter">B</span><span>Un ordre Market signifie que le trader entre un prix au-dessus ou en dessous du prix actuel de l'actif financier.</span></div>
+            <div class="option" data-val="C" id="m2q1c"><span class="opt-letter">C</span><span>Un ordre Market signifie que le trader exécute un trade au <em>meilleur prix immédiatement disponible</em> au moment de l'exécution.</span></div>
+            <div class="option" data-val="D" id="m2q1d"><span class="opt-letter">D</span><span>Un ordre Market signifie que le trader exécutera le trade à un prix meilleur que celui auquel l'actif se négocie actuellement.</span></div>
+          </div>
+          <div class="feedback" id="fb-m2q1"></div>
+          <button class="btn-next hidden" data-target="33" id="m2q1-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 33 · QUIZ M2 Q2 ── -->
+    <section class="slide slide--quiz" id="slide-33" data-index="33">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:40%"></div><span class="qp-label">Question 2 sur 5</span></div>
+        <div class="question-card" id="m2q2">
+          <div class="question-text">Que représente le prix Bid ?</div>
+          <div class="options" data-correct="A">
+            <div class="option" data-val="A" id="m2q2a"><span class="opt-letter">A</span><span>C'est le prix auquel un trader est prêt à <strong>acheter</strong> un actif particulier.</span></div>
+            <div class="option" data-val="B" id="m2q2b"><span class="opt-letter">B</span><span>C'est le prix auquel un trader est prêt à <strong>vendre</strong> un actif particulier.</span></div>
+            <div class="option" data-val="C" id="m2q2c"><span class="opt-letter">C</span><span>C'est le prix auquel un trader est prêt à acheter puis à vendre un actif particulier.</span></div>
+            <div class="option" data-val="D" id="m2q2d"><span class="opt-letter">D</span><span>C'est la différence entre le prix d'achat et le prix de vente.</span></div>
+          </div>
+          <div class="feedback" id="fb-m2q2"></div>
+          <button class="btn-next hidden" data-target="34" id="m2q2-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 34 · QUIZ M2 Q3 ── -->
+    <section class="slide slide--quiz" id="slide-34" data-index="34">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:60%"></div><span class="qp-label">Question 3 sur 5</span></div>
+        <div class="question-card" id="m2q3">
+          <div class="question-text">Quel est le rôle de la devise cotée dans une paire de devises ?</div>
+          <div class="options" data-correct="D">
+            <div class="option" data-val="A" id="m2q3a"><span class="opt-letter">A</span><span>La devise cotée est la <em>deuxième</em> devise de la paire et sert de référence <em>de base</em>.</span></div>
+            <div class="option" data-val="B" id="m2q3b"><span class="opt-letter">B</span><span>La devise cotée est la <em>première</em> devise de la paire et sert de référence <em>de base</em>.</span></div>
+            <div class="option" data-val="C" id="m2q3c"><span class="opt-letter">C</span><span>La devise cotée est la <em>première</em> devise de la paire et sert de référence <em>secondaire</em>.</span></div>
+            <div class="option" data-val="D" id="m2q3d"><span class="opt-letter">D</span><span>La devise cotée est la <em>deuxième</em> devise de la paire et sert de référence <em>secondaire</em>.</span></div>
+          </div>
+          <div class="feedback" id="fb-m2q3"></div>
+          <button class="btn-next hidden" data-target="35" id="m2q3-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 35 · QUIZ M2 Q4 ── -->
+    <section class="slide slide--quiz" id="slide-35" data-index="35">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:80%"></div><span class="qp-label">Question 4 sur 5</span></div>
+        <div class="question-card" id="m2q4">
+          <div class="question-text">Qu'est-ce qu'un graphique en chandeliers ?</div>
+          <div class="options" data-correct="D">
+            <div class="option" data-val="A" id="m2q4a"><span class="opt-letter">A</span><span>Un graphique qui montre uniquement la différence entre le prix d'ouverture et de clôture.</span></div>
+            <div class="option" data-val="B" id="m2q4b"><span class="opt-letter">B</span><span>Un graphique qui ressemble à des bougies dans un cimetière.</span></div>
+            <div class="option" data-val="C" id="m2q4c"><span class="opt-letter">C</span><span>Un graphique qui montre uniquement la différence entre le prix maximum et minimum.</span></div>
+            <div class="option" data-val="D" id="m2q4d"><span class="opt-letter">D</span><span>Un graphique sur lequel le trader voit la plage de trading d'une période donnée, incluant les prix d'ouverture, de clôture, le plus haut et le plus bas.</span></div>
+          </div>
+          <div class="feedback" id="fb-m2q4"></div>
+          <button class="btn-next hidden" data-target="36" id="m2q4-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 36 · QUIZ M2 Q5 ── -->
+    <section class="slide slide--quiz" id="slide-36" data-index="36">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:100%"></div><span class="qp-label">Question 5 sur 5</span></div>
+        <div class="question-card" id="m2q5">
+          <div class="question-text">Quel était le volume quotidien échangé sur les marchés forex en 2022 ?</div>
+          <div class="options" data-correct="D">
+            <div class="option" data-val="A" id="m2q5a"><span class="opt-letter">A</span><span>8,3 billions de dollars.</span></div>
+            <div class="option" data-val="B" id="m2q5b"><span class="opt-letter">B</span><span>9,7 milliards de dollars.</span></div>
+            <div class="option" data-val="C" id="m2q5c"><span class="opt-letter">C</span><span>7,1 billions de dollars.</span></div>
+            <div class="option" data-val="D" id="m2q5d"><span class="opt-letter">D</span><span>7,5 billions de dollars.</span></div>
+          </div>
+          <div class="feedback" id="fb-m2q5"></div>
+          <button class="btn-next hidden" data-target="37" id="m2q5-next">Voir les Résultats →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 37 · RÉSULTATS MODULE 2 ── -->
+    <section class="slide slide--results" id="slide-37" data-index="37">
+      <div class="slide-bg"></div>
+      <div class="results-inner">
+        <div class="results-icon" id="resultsIcon2">🏆</div>
+        <h2 class="results-title" id="resultsTitle2">Leçon A Terminée !</h2>
+        <div class="score-display" id="scoreDisplay2">
+          <span class="score-num" id="scoreNum2">0</span>
+          <span class="score-denom">/ 5</span>
+        </div>
+        <p class="score-msg" id="scoreMsg2"></p>
+        <div class="module2-teaser" style="margin:20px auto 0">
+          <div class="m2t-badge">Prochaine étape · Module 2 Leçon B</div>
+          <div class="m2t-content">
+            <div class="m2t-icon">📈</div>
+            <div>
+              <div class="m2t-title">Première Exécution de Trade</div>
+              <div class="m2t-sub">Découvrez comment passer votre premier ordre — Buy ou Sell — et comprendre l'impact du Stop Loss et du Take Profit.</div>
+            </div>
+          </div>
+        </div>
+        <div class="results-actions">
+          <button class="btn-secondary" id="btnRetakeQuiz2">↩ Refaire le Quiz A</button>
+          <button class="btn-secondary" id="btnBackM1">↑ Retour Module 1</button>
+          <button class="btn-primary" id="btnGoLeconB">Leçon B →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         MODULE 2 · LEÇON B — PREMIÈRE EXÉCUTION
+         Slides 38 – 46
+         ════════════════════════════════════════ -->
+
+    <!-- ── DIAPO 38 · COUVERTURE LEÇON B ── -->
+    <section class="slide slide--cover slide--m2cover" id="slide-38" data-index="38">
+      <div class="cover-bg">
+        <div class="grid-lines"></div>
+        <div class="glow glow--1"></div>
+        <div class="glow glow--2"></div>
+      </div>
+      <div class="cover-content">
+        <div class="badge animate-in" style="--d:0ms">Module 2 · Leçon B</div>
+        <h1 class="cover-title animate-in" style="--d:120ms">Première <span class="gradient-text">Exécution</span> de Trade</h1>
+        <p class="cover-subtitle animate-in" style="--d:240ms">Le Parcours du Trader</p>
+        <p class="cover-description animate-in" style="--d:360ms">
+          Apprenez à passer votre premier ordre —<br>Buy ou Sell — et maîtrisez l'importance du Stop Loss et du Take Profit.
+        </p>
+        <div class="cover-divider animate-in" style="--d:480ms"></div>
+        <div class="cover-meta animate-in" style="--d:600ms">
+          <span>Exécution d'Ordre</span>
+          <span class="dot">·</span>
+          <span>Buy / Sell</span>
+          <span class="dot">·</span>
+          <span>4 Questions de Quiz</span>
+        </div>
+      </div>
+      <div class="cover-chart animate-in" style="--d:300ms">
+        <svg viewBox="0 0 420 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="chartGradB" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#6ee7b7" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#6ee7b7" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path d="M0 160 L50 140 L90 150 L130 100 L170 70 L210 90 L250 50 L290 30 L340 10 L420 5" stroke="#6ee7b7" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M0 160 L50 140 L90 150 L130 100 L170 70 L210 90 L250 50 L290 30 L340 10 L420 5 L420 180 L0 180 Z" fill="url(#chartGradB)"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 39 · PREMIÈRE EXÉCUTION — INTRO + image ── -->
+    <section class="slide slide--content" id="slide-39" data-index="39">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Leçon B · Thème 01</span>
+          <h2>Première <span class="gradient-text">Exécution de Trade</span></h2>
+        </div>
+        <div class="imgbig-layout">
+          <div class="imgbig-image imgbig-image--tall">
+            <img src="market-sim.png" alt="Simulation de marché — premier trade" class="imgbig-img imgbig-img--contain-bg" />
+          </div>
+          <div class="imgbig-text">
+            <div class="ibt-block">
+              <div class="ibt-label">📌 Principe fondamental</div>
+              <p>Comme mentionné en introduction, le trading est fondamentalement <strong>très simple</strong>. Vous n'avez besoin d'aucune compétence particulière pour exécuter le trade lui-même.</p>
+            </div>
+            <div class="ibt-block">
+              <div class="ibt-label" style="color:var(--gold)">⚠️ Avant chaque trade, assurez-vous de connaître :</div>
+              <ul class="ibt-list">
+                <li>📍 <strong>Pourquoi</strong> vous entrez ce trade</li>
+                <li>💰 <strong>À quel prix</strong> vous entrez</li>
+                <li>📊 <strong>Quelle taille de position</strong> vous choisissez</li>
+              </ul>
+            </div>
+            <div class="fulldef-note">
+              💡 La <strong>taille de la position</strong> détermine l'ampleur de votre profit ou de votre perte.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 40 · STOP LOSS & TAKE PROFIT — IMPORTANCE ── -->
+    <section class="slide slide--content" id="slide-40" data-index="40">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Leçon B · Thème 02</span>
+          <h2>Stop Loss &amp; Take Profit — <span class="gradient-text">Indispensables</span></h2>
+        </div>
+        <div class="fulldef-layout">
+          <div class="fulldef-card" style="flex-direction:column; gap:20px; max-width:860px">
+            <p style="font-size:1rem; color:var(--text-muted); line-height:1.7">
+              Il est <strong style="color:#fff">crucial</strong> de définir un <strong style="color:var(--red)">Stop Loss</strong> pour éviter des pertes excessives,
+              et un <strong style="color:var(--green)">Take Profit</strong> pour sécuriser le profit visé.
+              Pour une rentabilité long terme, votre Take Profit doit généralement <strong style="color:#fff">dépasser votre Stop Loss</strong>,
+              garantissant que les profits l'emportent sur les pertes.
+            </p>
+            <div class="rbd-chart" style="max-width:560px; margin:0 auto">
+              <div class="rbd-tp">🎯 Take Profit — Profit sécurisé (doit dépasser le SL)</div>
+              <div class="rbd-entry">📍 Prix d'Entrée — Point de départ du trade</div>
+              <div class="rbd-sl">🛡️ Stop Loss — Perte maximale acceptée</div>
+            </div>
+            <div class="prop-features" style="max-width:560px; margin:0 auto">
+              <div class="pf-item" style="border-color:rgba(239,68,68,0.3); background:rgba(239,68,68,0.06)">
+                <span class="pf-icon">🛡️</span><span>Stop Loss — Limite les pertes</span>
+              </div>
+              <div class="pf-item" style="border-color:rgba(34,197,94,0.3); background:rgba(34,197,94,0.06)">
+                <span class="pf-icon">🎯</span><span>Take Profit — Sécurise le gain</span>
+              </div>
+              <div class="pf-item" style="border-color:rgba(129,140,248,0.3); background:rgba(129,140,248,0.06)">
+                <span class="pf-icon">📊</span><span>Taille de position — Définit l'amplitude</span>
+              </div>
+              <div class="pf-item" style="border-color:rgba(245,158,11,0.3); background:rgba(245,158,11,0.06)">
+                <span class="pf-icon">⚖️</span><span>TP > SL — Rentabilité long terme</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 41 · PREMIÈRE IMPLÉMENTATION + market-sim grande ── -->
+    <section class="slide slide--content" id="slide-41" data-index="41">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <span class="slide-tag">Leçon B · Thème 03</span>
+          <h2>Première <span class="gradient-text">Implémentation</span> du Trade</h2>
+        </div>
+        <div class="imgbig-layout imgbig-layout--reverse">
+          <div class="imgbig-text">
+            <div class="ibt-block">
+              <div class="ibt-label">🎓 Exemple simplifié</div>
+              <p>Essayez de passer un ordre en fonction de la direction que vous pensez que le prix va prendre. Le Stop Loss et le Take Profit sont définis <strong>automatiquement</strong> — concentrez-vous sur la direction !</p>
+            </div>
+            <div class="ibt-directions" style="gap:12px">
+              <div class="ibt-dir ibt-dir--bull" style="padding:14px 18px; font-size:1rem">
+                🟢 <strong>BUY</strong>
+                <span>Cliquez si vous pensez que le prix va <strong>monter</strong></span>
+              </div>
+              <div class="ibt-dir ibt-dir--bear" style="padding:14px 18px; font-size:1rem">
+                🔴 <strong>SELL</strong>
+                <span>Cliquez si vous pensez que le prix va <strong>baisser</strong></span>
+              </div>
+            </div>
+            <div class="fulldef-note" style="margin-top:8px">
+              👀 Observez ce qui se passe — les SL et TP se règlent automatiquement dans cette simulation.
+            </div>
+          </div>
+          <div class="imgbig-image imgbig-image--xxl">
+            <img src="market-sim.png" alt="Interface de simulation de trade — Buy/Sell" class="imgbig-img imgbig-img--contain-bg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 42 · INTRO QUIZ LEÇON B ── -->
+    <section class="slide slide--quiz-intro" id="slide-42" data-index="42">
+      <div class="slide-bg"></div>
+      <div class="quiz-intro-content">
+        <div class="quiz-intro-icon">📈</div>
+        <h2 class="quiz-intro-title">Bienvenue dans votre<br><span class="gradient-text">Première Exécution de Trade</span></h2>
+        <p class="quiz-intro-sub">Testez vos connaissances sur l'exécution de trades, le Stop Loss et la taille de position — 4 questions vous attendent.</p>
+        <div class="quiz-intro-meta">
+          <div class="qim">📝 4 Questions</div>
+          <div class="qim">⏱️ Prenez votre temps</div>
+          <div class="qim">🏆 Résultats instantanés</div>
+        </div>
+        <button class="btn-start-quiz" id="btnStartQuizB">Commencer le Quiz →</button>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 43 · QUIZ B Q1 ── -->
+    <section class="slide slide--quiz" id="slide-43" data-index="43">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:25%"></div><span class="qp-label">Question 1 sur 4</span></div>
+        <div class="question-card" id="bq1">
+          <div class="question-text">Quel est le but de définir un Stop Loss ?</div>
+          <div class="options" data-correct="C">
+            <div class="option" data-val="A" id="bq1a"><span class="opt-letter">A</span><span>Pour augmenter vos profits.</span></div>
+            <div class="option" data-val="B" id="bq1b"><span class="opt-letter">B</span><span>Pour rendre le trading plus amusant.</span></div>
+            <div class="option" data-val="C" id="bq1c"><span class="opt-letter">C</span><span>Pour éviter des pertes excessives.</span></div>
+            <div class="option" data-val="D" id="bq1d"><span class="opt-letter">D</span><span>Pour déconcerter les autres traders.</span></div>
+          </div>
+          <div class="feedback" id="fb-bq1"></div>
+          <button class="btn-next hidden" data-target="44" id="bq1-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 44 · QUIZ B Q2 ── -->
+    <section class="slide slide--quiz" id="slide-44" data-index="44">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:50%"></div><span class="qp-label">Question 2 sur 4</span></div>
+        <div class="question-card" id="bq2">
+          <div class="question-text">Que devez-vous décider avant d'entrer dans un trade ?</div>
+          <div class="options" data-correct="A">
+            <div class="option" data-val="A" id="bq2a"><span class="opt-letter">A</span><span>La raison d'entrer dans le trade, le prix et la taille de la position.</span></div>
+            <div class="option" data-val="B" id="bq2b"><span class="opt-letter">B</span><span>La météo du jour.</span></div>
+            <div class="option" data-val="C" id="bq2c"><span class="opt-letter">C</span><span>La couleur de votre plateforme de trading.</span></div>
+            <div class="option" data-val="D" id="bq2d"><span class="opt-letter">D</span><span>Le nombre de trades que les autres devraient faire.</span></div>
+          </div>
+          <div class="feedback" id="fb-bq2"></div>
+          <button class="btn-next hidden" data-target="45" id="bq2-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 45 · QUIZ B Q3 ── -->
+    <section class="slide slide--quiz" id="slide-45" data-index="45">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:75%"></div><span class="qp-label">Question 3 sur 4</span></div>
+        <div class="question-card" id="bq3">
+          <div class="question-text">Dans l'exemple simplifié, que faites-vous si vous pensez que le prix va monter ?</div>
+          <div class="options" data-correct="C">
+            <div class="option" data-val="A" id="bq3a"><span class="opt-letter">A</span><span>Cliquer sur Sell.</span></div>
+            <div class="option" data-val="B" id="bq3b"><span class="opt-letter">B</span><span>Définir un Stop Loss.</span></div>
+            <div class="option" data-val="C" id="bq3c"><span class="opt-letter">C</span><span>Cliquer sur Buy.</span></div>
+            <div class="option" data-val="D" id="bq3d"><span class="opt-letter">D</span><span>Attendre et observer.</span></div>
+          </div>
+          <div class="feedback" id="fb-bq3"></div>
+          <button class="btn-next hidden" data-target="46" id="bq3-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 46 · QUIZ B Q4 ── -->
+    <section class="slide slide--quiz" id="slide-46" data-index="46">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:100%"></div><span class="qp-label">Question 4 sur 4</span></div>
+        <div class="question-card" id="bq4">
+          <div class="question-text">Qu'est-ce qui détermine l'ampleur de votre profit ou de votre perte ?</div>
+          <div class="options" data-correct="D">
+            <div class="option" data-val="A" id="bq4a"><span class="opt-letter">A</span><span>La plateforme de trading.</span></div>
+            <div class="option" data-val="B" id="bq4b"><span class="opt-letter">B</span><span>L'unité de temps et la couleur des bougies sur votre graphique.</span></div>
+            <div class="option" data-val="C" id="bq4c"><span class="opt-letter">C</span><span>Votre intuition du moment lors de l'ouverture du trade.</span></div>
+            <div class="option" data-val="D" id="bq4d"><span class="opt-letter">D</span><span>La taille de la position et les niveaux de Stop Loss / Take Profit.</span></div>
+          </div>
+          <div class="feedback" id="fb-bq4"></div>
+          <button class="btn-next hidden" data-target="47" id="bq4-next">Voir les Résultats →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIAPO 47 · RÉSULTATS LEÇON B ── -->
+    <section class="slide slide--results" id="slide-47" data-index="47">
+      <div class="slide-bg"></div>
+      <div class="results-inner">
+        <div class="results-icon" id="resultsIconB">🏆</div>
+        <h2 class="results-title" id="resultsTitleB">Leçon B Terminée !</h2>
+        <div class="score-display" id="scoreDisplayB">
+          <span class="score-num" id="scoreNumB">0</span>
+          <span class="score-denom">/ 4</span>
+        </div>
+        <p class="score-msg" id="scoreMsgB"></p>
+        <div class="results-actions">
+          <button class="btn-secondary" id="btnRetakeQuizB">↩ Refaire le Quiz B</button>
+          <button class="btn-secondary" id="btnBackLeconA">← Leçon A</button>
+          <button class="btn-primary" id="btnGoLeconC">Leçon C →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEÇON C slides 48-53 -->
+    <section class="slide slide--cover slide--m2cover" id="slide-48" data-index="48">
+      <div class="cover-bg"><div class="grid-lines"></div><div class="glow glow--1"></div><div class="glow glow--2"></div></div>
+      <div class="cover-content">
+        <div class="badge animate-in" style="--d:0ms">Module 2 · Leçon C</div>
+        <h1 class="cover-title animate-in" style="--d:120ms">Environnements de <span class="gradient-text">Marché</span></h1>
+        <p class="cover-subtitle animate-in" style="--d:240ms">Range vs Tendance</p>
+        <p class="cover-description animate-in" style="--d:360ms">Bonjour traders ! Dans cette leçon, nous explorons<br>les deux grands types d'environnements de marché.</p>
+        <div class="cover-divider animate-in" style="--d:480ms"></div>
+        <div class="cover-meta animate-in" style="--d:600ms">
+          <span>Tendances</span><span class="dot">·</span><span>Ranges</span><span class="dot">·</span><span>9 Questions de Quiz</span>
+        </div>
+      </div>
+      <div class="cover-chart animate-in" style="--d:300ms">
+        <svg viewBox="0 0 420 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs><linearGradient id="cgC" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#818cf8" stop-opacity="0.35"/><stop offset="100%" stop-color="#818cf8" stop-opacity="0"/></linearGradient></defs>
+          <path d="M0 160 L50 130 L80 140 L130 90 L160 105 L200 60 L230 75 L260 75 L280 65 L310 75 L330 65 L360 73 L420 68" stroke="#818cf8" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M0 160 L50 130 L80 140 L130 90 L160 105 L200 60 L230 75 L260 75 L280 65 L310 75 L330 65 L360 73 L420 68 L420 180 L0 180Z" fill="url(#cgC)"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="slide slide--content" id="slide-49" data-index="49">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header"><span class="slide-tag">Leçon C · Aperçu</span><h2>Table des <span class="gradient-text">Matières</span></h2></div>
+        <div class="fulldef-layout">
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;width:100%;max-width:900px">
+            <div class="toc-theme-card" style="border-color:rgba(129,140,248,.4);background:rgba(129,140,248,.06)">
+              <div class="ttc-icon">🌐</div><div class="ttc-title">Identification</div>
+              <div class="ttc-items"><div>Range vs Tendance</div><div>Importance stratégique</div></div>
+            </div>
+            <div class="toc-theme-card" style="border-color:rgba(34,197,94,.4);background:rgba(34,197,94,.06)">
+              <div class="ttc-icon">📈</div><div class="ttc-title">Tendances</div>
+              <div class="ttc-items"><div>Uptrend · Downtrend</div><div>Swing High · Swing Low</div><div>Changement de tendance</div><div>MM, MACD, Ichimoku</div></div>
+            </div>
+            <div class="toc-theme-card" style="border-color:rgba(245,158,11,.4);background:rgba(245,158,11,.06)">
+              <div class="ttc-icon">↔️</div><div class="ttc-title">Ranges</div>
+              <div class="ttc-items"><div>Support · Résistance</div><div>Marchés latéraux</div><div>Mean-Reversion</div><div>Bollinger · RSI</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--content" id="slide-50" data-index="50">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header"><span class="slide-tag">Leçon C · Thème 01</span><h2>Range vs Tendance — <span class="gradient-text">Savoir Identifier</span></h2></div>
+        <div class="fulldef-layout">
+          <div class="fulldef-card" style="flex-direction:column;gap:22px;max-width:880px">
+            <p style="font-size:1rem;color:var(--text-muted);line-height:1.75">Reconnaître l'environnement de marché <strong style="color:#fff">le plus tôt possible</strong> est l'une des choses les plus importantes à faire. Les marchés en <strong style="color:#818cf8">tendance</strong> et les marchés en <strong style="color:#f59e0b">range</strong> exigent des approches <strong style="color:#fff">diamétralement opposées</strong>.</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+              <div class="pf-item" style="border-color:rgba(34,197,94,.3);background:rgba(34,197,94,.06);flex-direction:column;align-items:flex-start;gap:8px;padding:18px">
+                <div style="font-size:1.1rem;font-weight:700;color:var(--green)">📈 Marché en Tendance</div>
+                <p style="color:var(--text-muted);font-size:.9rem;line-height:1.6">Le prix évolue de façon <strong>directionnelle</strong> — à la hausse (uptrend) ou à la baisse (downtrend). On suit la tendance.</p>
+              </div>
+              <div class="pf-item" style="border-color:rgba(245,158,11,.3);background:rgba(245,158,11,.06);flex-direction:column;align-items:flex-start;gap:8px;padding:18px">
+                <div style="font-size:1.1rem;font-weight:700;color:#f59e0b">↔️ Marché en Range</div>
+                <p style="color:var(--text-muted);font-size:.9rem;line-height:1.6">Le prix <strong>oscille</strong> entre un support et une résistance. On utilise des stratégies de retour à la moyenne.</p>
+              </div>
+            </div>
+            <div class="fulldef-note">💡 <strong>Règle d'or :</strong> Identifiez toujours l'environnement AVANT d'ouvrir un trade. Votre stratégie doit s'y adapter.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--content" id="slide-51" data-index="51">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header"><span class="slide-tag">Leçon C · Thème 02</span><h2>La Tendance <span class="gradient-text">Haussière</span> (Uptrend)</h2></div>
+        <div class="imgbig-layout">
+          <div class="imgbig-image imgbig-image--tall">
+            <img src="market environment /UPTREND png.png" alt="Graphique uptrend HH HL" class="imgbig-img imgbig-img--contain-bg"/>
+          </div>
+          <div class="imgbig-text">
+            <div class="ibt-block">
+              <div class="ibt-label">📈 Définition de l'Uptrend</div>
+              <p>Une tendance haussière est caractérisée par des <strong>plus hauts croissants (Higher Highs — HH)</strong> et des <strong>plus bas croissants (Higher Lows — HL)</strong>. Le prix monte progressivement en formant des vagues ascendantes.</p>
+            </div>
+            <div class="ibt-block">
+              <div class="ibt-label" style="color:var(--green)">🟢 Comment l'identifier</div>
+              <ul class="ibt-list">
+                <li>Chaque sommet est <strong>plus haut</strong> que le précédent (HH)</li>
+                <li>Chaque creux est <strong>plus haut</strong> que le précédent (HL)</li>
+                <li>Le prix monte en formant des <strong>vagues ascendantes</strong></li>
+              </ul>
+            </div>
+            <div class="fulldef-note">💡 Les hauts et bas sont formés par des motifs de <strong>3 chandeliers consécutifs</strong> — c'est l'origine des Swing Highs &amp; Swing Lows.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--content" id="slide-52" data-index="52">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header"><span class="slide-tag">Leçon C · Thème 02</span><h2>Swing Highs <span class="gradient-text">&amp; Swing Lows</span></h2></div>
+        <div class="imgbig-layout imgbig-layout--reverse">
+          <div class="imgbig-text">
+            <div class="ibt-block">
+              <div class="ibt-label">🔵 Swing Low — Définition</div>
+              <p>Un <strong>Swing Low</strong> se forme lorsque la <strong>2e bougie</strong> atteint un creux, tandis que la 1re et la 3e bougie restent <strong>au-dessus</strong>. En uptrend, c'est une zone de rebond — une opportunité d'achat.</p>
+            </div>
+            <div class="ibt-block">
+              <div class="ibt-label" style="color:var(--red)">🔴 Swing High — Définition</div>
+              <p>Un <strong>Swing High</strong> se forme lorsque la <strong>2e bougie</strong> atteint un sommet, tandis que la 1re et la 3e bougie restent <strong>en dessous</strong>. En downtrend, c'est une zone de résistance — une opportunité de vente.</p>
+            </div>
+            <div class="fulldef-note">📌 Repérez les Swing Lows en uptrend pour entrer à l'achat lors des pullbacks. Repérez les Swing Highs en downtrend pour vendre lors des rallyes.</div>
+          </div>
+          <div class="imgbig-image imgbig-image--tall">
+            <img src="market environment /UP AND DOWN TREND.png" alt="Swing Highs et Swing Lows" class="imgbig-img imgbig-img--contain-bg"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--content" id="slide-53" data-index="53">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header"><span class="slide-tag">Leçon C · Thème 02</span><h2>La Tendance <span class="gradient-text">Baissière</span> (Downtrend)</h2></div>
+        <div class="imgbig-layout">
+          <div class="imgbig-image imgbig-image--tall">
+            <img src="market environment /DOWNTREND.png" alt="Graphique downtrend LL LH" class="imgbig-img imgbig-img--contain-bg"/>
+          </div>
+          <div class="imgbig-text">
+            <div class="ibt-block">
+              <div class="ibt-label" style="color:var(--red)">🔴 Caractéristiques du Downtrend</div>
+              <p>La tendance baissière est caractérisée par des <strong>plus bas décroissants (Lower Lows — LL)</strong> et des <strong>plus hauts décroissants (Lower Highs — LH)</strong>. Le prix descend progressivement en créant des vagues descendantes.</p>
+            </div>
+            <div class="ibt-block">
+              <div class="ibt-label">🎯 Stratégie en Downtrend</div>
+              <p>On recherche des <strong>rallyes de court terme</strong> qui créent des Swing Highs. Ces niveaux offrent des <strong>opportunités de vente (Sell)</strong> pour profiter de la continuation baissière.</p>
+            </div>
+            <div class="ibt-directions" style="gap:10px">
+              <div class="ibt-dir ibt-dir--bear" style="padding:12px 16px;font-size:.9rem">🔴 <strong>SELL</strong> <span>Vendez au niveau des Swing Highs en downtrend</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="slide slide--content" id="slide-54" data-index="54">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header"><span class="slide-tag">Leçon C · Thème 02</span><h2>Quand la Tendance <span class="gradient-text">Change-t-elle ?</span></h2></div>
+        <div class="imgbig-layout imgbig-layout--reverse">
+          <div class="imgbig-text">
+            <div class="ibt-block">
+              <div class="ibt-label">⚠️ Retournement depuis un Uptrend</div>
+              <p>Si nous sommes en <strong>uptrend</strong> et que le dernier <strong>Swing Low</strong> — celui qui précède le plus haut absolu — est cassé à la baisse, on peut envisager un <strong>changement de tendance</strong> ou au moins une pause significative.</p>
+            </div>
+            <div class="ibt-block">
+              <div class="ibt-label" style="color:var(--red)">⚠️ Retournement depuis un Downtrend</div>
+              <p>En <strong>downtrend</strong>, si le dernier <strong>Swing High</strong> — celui qui précède le plus bas absolu — est cassé à la hausse, on peut rechercher des <strong>opportunités d'achat</strong> ou anticiper un ralentissement.</p>
+            </div>
+            <div class="fulldef-note">⚡ En marchés réels, les Swing Highs/Lows sont souvent <strong>temporairement violés</strong> avant que le prix reprenne sa direction. Évitez les réactions prématurées — la pratique est essentielle !</div>
+          </div>
+          <div class="imgbig-image imgbig-image--tall">
+            <img src="market environment /TREND CHANGING.png" alt="Changement de tendance" class="imgbig-img imgbig-img--contain-bg"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--content" id="slide-55" data-index="55">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header"><span class="slide-tag">Leçon C · Thème 02</span><h2>Indicateurs de <span class="gradient-text">Tendance</span></h2></div>
+        <div class="imgbig-layout">
+          <div class="imgbig-image imgbig-image--tall">
+            <img src="market environment /TRENDS.jpg" alt="Indicateurs de tendance" class="imgbig-img imgbig-img--contain-bg"/>
+          </div>
+          <div class="imgbig-text">
+            <div class="ibt-block">
+              <div class="ibt-label">🛠️ Rester dans la tendance</div>
+              <p>Sur un marché tendanciel, des <strong>indicateurs techniques</strong> nous aident à suivre le mouvement et à construire des stratégies de <em>trend-following</em> efficaces.</p>
+            </div>
+            <div class="prop-features" style="gap:10px">
+              <div class="pf-item" style="border-color:rgba(129,140,248,.3);background:rgba(129,140,248,.06)">
+                <span class="pf-icon">📊</span><span><strong>Moyennes Mobiles (MM)</strong> — Lissent le prix et montrent la direction générale du marché</span>
+              </div>
+              <div class="pf-item" style="border-color:rgba(34,197,94,.3);background:rgba(34,197,94,.06)">
+                <span class="pf-icon">☁️</span><span><strong>Ichimoku Cloud</strong> — Donne le biais directionnel, le support/résistance et la dynamique en un coup d'œil</span>
+              </div>
+              <div class="pf-item" style="border-color:rgba(245,158,11,.3);background:rgba(245,158,11,.06)">
+                <span class="pf-icon">📉</span><span><strong>MACD</strong> — Mesure la convergence/divergence des moyennes mobiles pour identifier l'élan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--content" id="slide-56" data-index="56">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header"><span class="slide-tag">Leçon C · Thème 03</span><h2>Les Marchés en <span class="gradient-text">Range</span></h2></div>
+        <div class="imgbig-layout imgbig-layout--reverse">
+          <div class="imgbig-text">
+            <div class="ibt-block">
+              <div class="ibt-label">↔️ Qu'est-ce qu'un Range ?</div>
+              <p>Dans un marché en range, le prix <strong>rebondit</strong> entre des niveaux définis. Le <strong>haut du range agit comme résistance</strong> (le prix y est repoussé à la baisse) et le <strong>bas du range agit comme support</strong> (le prix y rebondit à la hausse).</p>
+            </div>
+            <div class="ibt-block">
+              <div class="ibt-label" style="color:#f59e0b">📛 Autres noms</div>
+              <p>Les marchés en range sont également appelés marchés <strong>latéraux (sideways)</strong> ou marchés <strong>sans tendance (bracketing)</strong>. Le prix manque de direction claire et consolidate entre deux zones de prix.</p>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px">
+              <div class="pf-item" style="border-color:rgba(239,68,68,.3);background:rgba(239,68,68,.06)"><span class="pf-icon">🔴</span><span><strong>Résistance</strong> — haut du range</span></div>
+              <div class="pf-item" style="border-color:rgba(34,197,94,.3);background:rgba(34,197,94,.06)"><span class="pf-icon">🟢</span><span><strong>Support</strong> — bas du range</span></div>
+            </div>
+          </div>
+          <div class="imgbig-image imgbig-image--tall">
+            <img src="market environment /RANGE.jpg" alt="Marché en range support résistance" class="imgbig-img imgbig-img--contain-bg"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--content" id="slide-57" data-index="57">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header"><span class="slide-tag">Leçon C · Thème 03</span><h2>Stratégies <span class="gradient-text">Mean-Reversion</span></h2></div>
+        <div class="fulldef-layout">
+          <div class="fulldef-card" style="flex-direction:column;gap:18px;max-width:880px">
+            <p style="font-size:1rem;color:var(--text-muted);line-height:1.75">Dans les marchés en range, on n'essaie pas de capturer des mouvements directionnels. On utilise des <strong style="color:#fff">stratégies de retour à la moyenne (mean-reversion)</strong> : l'hypothèse est que l'actif finira par <strong style="color:#fff">revenir vers sa moyenne</strong> une fois qu'il s'en est écarté.</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+              <div class="pf-item" style="border-color:rgba(129,140,248,.3);background:rgba(129,140,248,.06);flex-direction:column;align-items:flex-start;gap:6px;padding:16px">
+                <span style="font-weight:700;color:#818cf8">📐 La Moyenne (Mean)</span>
+                <p style="font-size:.85rem;color:var(--text-muted)">Peut être une moyenne mobile, un VWAP ou un niveau de prix clé. On calcule les <strong>déviations standard</strong> autour de cette moyenne pour trouver les extrêmes.</p>
+              </div>
+              <div class="pf-item" style="border-color:rgba(245,158,11,.3);background:rgba(245,158,11,.06);flex-direction:column;align-items:flex-start;gap:6px;padding:16px">
+                <span style="font-weight:700;color:#f59e0b">⚠️ Risque Principal</span>
+                <p style="font-size:.85rem;color:var(--text-muted)">Si le marché commence à <strong>tendancier</strong>, on se retrouve du mauvais côté. Le risque est de ne pas détecter la sortie du range à temps.</p>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
+              <div class="pf-item" style="border-color:rgba(34,197,94,.3);background:rgba(34,197,94,.06)"><span class="pf-icon">📊</span><span><strong>Bollinger Bands</strong></span></div>
+              <div class="pf-item" style="border-color:rgba(34,197,94,.3);background:rgba(34,197,94,.06)"><span class="pf-icon">📈</span><span><strong>RSI</strong></span></div>
+              <div class="pf-item" style="border-color:rgba(34,197,94,.3);background:rgba(34,197,94,.06)"><span class="pf-icon">📉</span><span><strong>Stochastique</strong></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--content" id="slide-58" data-index="58">
+      <div class="slide-bg"></div>
+      <div class="slide-inner">
+        <div class="slide-header"><span class="slide-tag">Leçon C · Conclusion</span><h2>Trend ou Range — <span class="gradient-text">Lequel Choisir ?</span></h2></div>
+        <div class="fulldef-layout">
+          <div class="fulldef-card" style="flex-direction:column;gap:20px;max-width:880px">
+            <p style="font-size:1rem;color:var(--text-muted);line-height:1.75">La réponse dépend de <strong style="color:#fff">vos préférences personnelles</strong>. En général, les marchés sont davantage en range qu'en tendance, mais <strong style="color:var(--green)">beaucoup d'argent peut être gagné dans de grandes tendances</strong>.</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+              <div class="pf-item" style="border-color:rgba(34,197,94,.3);background:rgba(34,197,94,.06);flex-direction:column;align-items:flex-start;gap:8px;padding:18px">
+                <div style="font-weight:700;color:var(--green);font-size:1.05rem">📈 Suivi de Tendance</div>
+                <ul style="color:var(--text-muted);font-size:.88rem;padding-left:18px;line-height:1.7"><li>Profits potentiellement importants</li><li>Indicateurs : MM, MACD, Ichimoku</li><li>Requiert patience et discipline</li></ul>
+              </div>
+              <div class="pf-item" style="border-color:rgba(245,158,11,.3);background:rgba(245,158,11,.06);flex-direction:column;align-items:flex-start;gap:8px;padding:18px">
+                <div style="font-weight:700;color:#f59e0b;font-size:1.05rem">↔️ Mean-Reversion (Range)</div>
+                <ul style="color:var(--text-muted);font-size:.88rem;padding-left:18px;line-height:1.7"><li>Marchés latéraux plus fréquents</li><li>Indicateurs : Bollinger, RSI, Stoch.</li><li>Risque si une tendance démarre</li></ul>
+              </div>
+            </div>
+            <div class="fulldef-note">🎯 <strong>La clé :</strong> Identifiez d'abord l'environnement, puis appliquez la stratégie adaptée. Ne jamais utiliser une stratégie de tendance dans un range, et vice versa !</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="slide slide--quiz-intro" id="slide-59" data-index="59">
+      <div class="slide-bg"></div>
+      <div class="quiz-intro-content">
+        <div class="quiz-intro-icon">📊</div>
+        <h2 class="quiz-intro-title">Quiz — <span class="gradient-text">Environnements de Marché</span></h2>
+        <p class="quiz-intro-sub">Testez vos connaissances sur les tendances et les ranges — 9 questions. Tentatives illimitées !</p>
+        <div class="quiz-intro-meta">
+          <div class="qim">📝 9 Questions</div><div class="qim">🔁 Tentatives infinies</div><div class="qim">🏆 Résultats instantanés</div>
+        </div>
+        <button class="btn-start-quiz" id="btnStartQuizC">Commencer le Quiz →</button>
+      </div>
+    </section>
+
+    <section class="slide slide--quiz" id="slide-60" data-index="60">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:11%"></div><span class="qp-label">Question 1 sur 9</span></div>
+        <div class="question-card" id="cq1">
+          <div class="question-text">Que représentent les plus bas décroissants (Lower Lows) et les plus hauts décroissants (Lower Highs) ?</div>
+          <div class="options" data-correct="C">
+            <div class="option" data-val="A" id="cq1a"><span class="opt-letter">A</span><span>Tendance haussière (Uptrend)</span></div>
+            <div class="option" data-val="B" id="cq1b"><span class="opt-letter">B</span><span>Rien de particulier</span></div>
+            <div class="option" data-val="C" id="cq1c"><span class="opt-letter">C</span><span>Tendance baissière (Downtrend)</span></div>
+          </div>
+          <div class="feedback" id="fb-cq1"></div>
+          <button class="btn-next hidden" data-target="61" id="cq1-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--quiz" id="slide-61" data-index="61">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:22%"></div><span class="qp-label">Question 2 sur 9</span></div>
+        <div class="question-card" id="cq2">
+          <div class="question-text">Quel est l'autre nom des marchés en range ?</div>
+          <div class="options" data-correct="B">
+            <div class="option" data-val="A" id="cq2a"><span class="opt-letter">A</span><span>Marchés hauts et bas</span></div>
+            <div class="option" data-val="B" id="cq2b"><span class="opt-letter">B</span><span>Marchés latéraux (sideways)</span></div>
+            <div class="option" data-val="C" id="cq2c"><span class="opt-letter">C</span><span>Marchés Support &amp; Résistance</span></div>
+            <div class="option" data-val="D" id="cq2d"><span class="opt-letter">D</span><span>Marchés rectangulaires</span></div>
+          </div>
+          <div class="feedback" id="fb-cq2"></div>
+          <button class="btn-next hidden" data-target="62" id="cq2-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--quiz" id="slide-62" data-index="62">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:33%"></div><span class="qp-label">Question 3 sur 9</span></div>
+        <div class="question-card" id="cq3">
+          <div class="question-text">Les Bandes de Bollinger sont l'un des indicateurs de mean-reversion les plus populaires.</div>
+          <div class="options" data-correct="B">
+            <div class="option" data-val="A" id="cq3a"><span class="opt-letter">A</span><span>Non</span></div>
+            <div class="option" data-val="B" id="cq3b"><span class="opt-letter">B</span><span>Oui</span></div>
+          </div>
+          <div class="feedback" id="fb-cq3"></div>
+          <button class="btn-next hidden" data-target="63" id="cq3-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--quiz" id="slide-63" data-index="63">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:44%"></div><span class="qp-label">Question 4 sur 9</span></div>
+        <div class="question-card" id="cq4">
+          <div class="question-text">Quelle stratégie sera probablement utilisée dans les marchés en range ?</div>
+          <div class="options" data-correct="B">
+            <div class="option" data-val="A" id="cq4a"><span class="opt-letter">A</span><span>Stratégie de cassure (Breakout)</span></div>
+            <div class="option" data-val="B" id="cq4b"><span class="opt-letter">B</span><span>Stratégie de mean-reversion (retour à la moyenne)</span></div>
+            <div class="option" data-val="C" id="cq4c"><span class="opt-letter">C</span><span>Stratégie hausse &amp; baisse</span></div>
+            <div class="option" data-val="D" id="cq4d"><span class="opt-letter">D</span><span>Stratégie de suivi de tendance</span></div>
+          </div>
+          <div class="feedback" id="fb-cq4"></div>
+          <button class="btn-next hidden" data-target="64" id="cq4-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--quiz" id="slide-64" data-index="64">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:56%"></div><span class="qp-label">Question 5 sur 9</span></div>
+        <div class="question-card" id="cq5">
+          <div class="question-text">Complétez : Si nous sommes en … et que le dernier swing … qui mène au … le plus élevé est cassé, on peut envisager un changement de tendance.</div>
+          <div class="options" data-correct="C">
+            <div class="option" data-val="A" id="cq5a"><span class="opt-letter">A</span><span>Uptrend, high, low</span></div>
+            <div class="option" data-val="B" id="cq5b"><span class="opt-letter">B</span><span>Downtrend, high, low</span></div>
+            <div class="option" data-val="C" id="cq5c"><span class="opt-letter">C</span><span>Uptrend, low, high</span></div>
+            <div class="option" data-val="D" id="cq5d"><span class="opt-letter">D</span><span>Downtrend, low, high</span></div>
+          </div>
+          <div class="feedback" id="fb-cq5"></div>
+          <button class="btn-next hidden" data-target="65" id="cq5-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--quiz" id="slide-65" data-index="65">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:67%"></div><span class="qp-label">Question 6 sur 9</span></div>
+        <div class="question-card" id="cq6">
+          <div class="question-text">Quel indicateur est le plus populaire pour identifier les tendances ?</div>
+          <div class="options" data-correct="B">
+            <div class="option" data-val="A" id="cq6a"><span class="opt-letter">A</span><span>RSI</span></div>
+            <div class="option" data-val="B" id="cq6b"><span class="opt-letter">B</span><span>Les Moyennes Mobiles (Moving Averages)</span></div>
+            <div class="option" data-val="C" id="cq6c"><span class="opt-letter">C</span><span>La séquence de Fibonacci</span></div>
+            <div class="option" data-val="D" id="cq6d"><span class="opt-letter">D</span><span>Les tests de régression</span></div>
+          </div>
+          <div class="feedback" id="fb-cq6"></div>
+          <button class="btn-next hidden" data-target="66" id="cq6-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--quiz" id="slide-66" data-index="66">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:78%"></div><span class="qp-label">Question 7 sur 9</span></div>
+        <div class="question-card" id="cq7">
+          <div class="question-text">Le niveau de prix le plus haut agit comme … dans les marchés en range. (complétez)</div>
+          <div class="options" data-correct="C">
+            <div class="option" data-val="A" id="cq7a"><span class="opt-letter">A</span><span>Tendance</span></div>
+            <div class="option" data-val="B" id="cq7b"><span class="opt-letter">B</span><span>Stop Loss</span></div>
+            <div class="option" data-val="C" id="cq7c"><span class="opt-letter">C</span><span>Résistance</span></div>
+            <div class="option" data-val="D" id="cq7d"><span class="opt-letter">D</span><span>Support</span></div>
+          </div>
+          <div class="feedback" id="fb-cq7"></div>
+          <button class="btn-next hidden" data-target="67" id="cq7-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--quiz" id="slide-67" data-index="67">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:89%"></div><span class="qp-label">Question 8 sur 9</span></div>
+        <div class="question-card" id="cq8">
+          <div class="question-text">Comment reconnaître une tendance haussière (uptrend) sur un graphique ?</div>
+          <div class="options" data-correct="D">
+            <div class="option" data-val="A" id="cq8a"><span class="opt-letter">A</span><span>Des sommets décroissants (LH) et des creux décroissants (LL)</span></div>
+            <div class="option" data-val="B" id="cq8b"><span class="opt-letter">B</span><span>Des sommets décroissants (LH) et des creux croissants (HL)</span></div>
+            <div class="option" data-val="C" id="cq8c"><span class="opt-letter">C</span><span>Des creux croissants (HL) et des creux croissants (HL)</span></div>
+            <div class="option" data-val="D" id="cq8d"><span class="opt-letter">D</span><span>Des sommets croissants (HH) et des creux croissants (HL)</span></div>
+          </div>
+          <div class="feedback" id="fb-cq8"></div>
+          <button class="btn-next hidden" data-target="68" id="cq8-next">Question Suivante →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--quiz" id="slide-68" data-index="68">
+      <div class="slide-bg"></div>
+      <div class="quiz-inner">
+        <div class="quiz-progress"><div class="qp-bar" style="--pct:100%"></div><span class="qp-label">Question 9 sur 9</span></div>
+        <div class="question-card" id="cq9">
+          <div class="question-text">Est-il préférable de suivre les tendances ou de trader les marchés en range ?</div>
+          <div class="options" data-correct="D">
+            <div class="option" data-val="A" id="cq9a"><span class="opt-letter">A</span><span>Les marchés en tendance sont meilleurs pour trader.</span></div>
+            <div class="option" data-val="B" id="cq9b"><span class="opt-letter">B</span><span>Cela dépend de vous, mais les marchés sont plus en tendance qu'en range.</span></div>
+            <div class="option" data-val="C" id="cq9c"><span class="opt-letter">C</span><span>Les marchés en range sont meilleurs pour trader.</span></div>
+            <div class="option" data-val="D" id="cq9d"><span class="opt-letter">D</span><span>Cela dépend de vous, mais les marchés sont plus en range qu'en tendance.</span></div>
+          </div>
+          <div class="feedback" id="fb-cq9"></div>
+          <button class="btn-next hidden" data-target="69" id="cq9-next">Voir les Résultats →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide slide--results" id="slide-69" data-index="69">
+      <div class="slide-bg"></div>
+      <div class="results-inner">
+        <div class="results-icon" id="resultsIconC">🏆</div>
+        <h2 class="results-title" id="resultsTitleC">Leçon C Terminée !</h2>
+        <div class="score-display" id="scoreDisplayC">
+          <span class="score-num" id="scoreNumC">0</span>
+          <span class="score-denom">/ 9</span>
+        </div>
+        <p class="score-msg" id="scoreMsgC"></p>
+        <div class="results-actions">
+          <button class="btn-secondary" id="btnRetakeQuizC">↩ Refaire le Quiz C</button>
+          <button class="btn-secondary" id="btnBackLeconB">← Leçon B</button>
+          <button class="btn-primary" id="btnRestartLeconC">⟳ Début Leçon C</button>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /deck -->
+
+  <!-- ── Navigation ── -->
+  <nav class="nav-bar" id="navBar" aria-label="Navigation des diapositives">
+    <button class="nav-btn" id="btnPrev" aria-label="Diapositive précédente" title="Précédent">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M12.293 14.707a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414l4-4a1 1 0 1 1 1.414 1.414L9.414 10l2.879 2.879a1 1 0 0 1 0 1.414z"/></svg>
+    </button>
+    <div class="slide-indicator" id="slideIndicator">1 / 9</div>
+    <div class="module-indicator" id="moduleIndicator">M1</div>
+    <button class="nav-btn" id="btnNext" aria-label="Diapositive suivante" title="Suivant">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M7.707 5.293a1 1 0 0 1 1.414 0l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 1 1-1.414-1.414L10.586 10 7.707 7.121a1 1 0 0 1 0-1.414z"/></svg>
+    </button>
+  </nav>
+
+  <!-- Theme toggle — standalone fixed button, bottom-right -->
+  <button class="theme-toggle" id="btnTheme" aria-label="Basculer le thème" title="Mode clair / sombre">
+    <span class="theme-icon theme-icon--moon">🌙</span>
+    <span class="theme-icon theme-icon--sun">☀️</span>
+  </button>
+
+  <div class="keyboard-hint" id="keyHint">
+    Utilisez les touches ← → pour naviguer
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
