@@ -2202,3 +2202,87 @@ body.light .slide-tag  { color: #2563eb !important; }
 body.light .prop-intro p      { color: #334155 !important; }
 body.light .prop-features .pf-item span { color: #334155 !important; }
 
+
+/* ═══════════════════════════════════════════════════════
+   MOBILE RESPONSIVENESS OVERHAUL
+   ═══════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* 1. Global typography & spacing */
+  :root {
+    font-size: 14px; /* Slightly smaller base font on mobile */
+  }
+  .slide-inner {
+    padding: 20px 16px 80px 16px !important; /* Smaller padding, keep bottom space for nav */
+    align-content: start; /* Prevent vertical centering from pushing content off-screen if tall */
+    overflow-y: auto; /* Allow scrolling if content is too tall */
+  }
+  
+  /* 2. Typography scaling */
+  .cover-title { font-size: 2.2rem !important; }
+  .cover-subtitle { font-size: 1.5rem !important; }
+  .slide-inner h2 { font-size: 1.8rem !important; margin-bottom: 12px; }
+  p, li, div { font-size: 1rem; line-height: 1.5; }
+  
+  /* 3. Force all inline and defined grids to stack */
+  div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+  .traits-grid, .comparison-table, .content-layout, .positions-layout, 
+  .myth-vs-reality, .imgbig-layout, .imgbig-layout--reverse, 
+  .risk-big-layout, .vol-big-images, .toc-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* 4. Force flexbox layouts to wrap/stack if they cause overflow */
+  .leverage-cards, .cmp-divider, .roadmap, .cycle-wheel {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .road-connector { transform: rotate(90deg); margin: 10px auto !important; }
+  
+  /* 5. Adjust specific components */
+  .imgbig-image { 
+    min-height: 180px !important; 
+    border-radius: 12px; 
+  }
+  .risk-big-diagram { display: none !important; } /* Hide complex diagrams if they don't fit */
+  .fulldef-card, .fulldef-stats { flex-direction: column !important; }
+  
+  /* 6. Navigation and UI */
+  .nav-bar {
+    bottom: 15px !important;
+    padding: 8px 16px !important;
+    gap: 10px !important;
+    width: 90% !important;
+    max-width: 320px;
+  }
+  .theme-toggle {
+    bottom: 15px !important;
+    right: 10px !important;
+    padding: 6px 10px !important;
+    font-size: 0.9rem !important;
+  }
+  
+  /* 7. Quiz Options */
+  .options { gap: 8px !important; }
+  .option { padding: 12px 16px !important; }
+  .opt-letter { width: 28px !important; height: 28px !important; }
+  .question-text { font-size: 1.1rem !important; }
+  
+  /* 8. Handle any oversized images */
+  img { max-width: 100% !important; height: auto !important; }
+  
+  /* 9. Ensure scrolling works for overflowing content on tiny screens */
+  .slide--content, .slide--quiz, .slide--results {
+    align-items: flex-start !important;
+    overflow-y: auto !important;
+    padding-top: 20px !important;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  .nav-bar { gap: 5px !important; padding: 8px 10px !important; }
+  .slide-indicator { font-size: 0.8rem; }
+  .module-indicator { font-size: 0.7rem; padding: 2px 6px; }
+}
